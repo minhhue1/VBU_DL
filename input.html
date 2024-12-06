@@ -26,6 +26,7 @@
         }
         button {
             padding: 10px 15px;
+            margin-right: 10px;
             background-color: #28a745;
             color: white;
             border: none;
@@ -34,6 +35,12 @@
         }
         button:hover {
             background-color: #218838;
+        }
+        #copy-json {
+            background-color: #007bff;
+        }
+        #copy-json:hover {
+            background-color: #0056b3;
         }
         pre {
             background-color: #f8f9fa;
@@ -57,6 +64,7 @@
         
         <button type="button" id="add-entry">Thêm vào danh sách</button>
         <button type="button" id="download-json">Tải xuống JSON</button>
+        <button type="button" id="copy-json">Sao chép JSON</button>
     </form>
 
     <h2>Dữ liệu JSON:</h2>
@@ -71,6 +79,7 @@
         const explanationInput = document.getElementById('explanation');
         const jsonOutput = document.getElementById('json-output');
 
+        // Thêm dữ liệu vào danh sách
         document.getElementById('add-entry').addEventListener('click', () => {
             const question = questionInput.value.trim();
             const answer = answerInput.value.trim();
@@ -92,6 +101,7 @@
             }
         });
 
+        // Tải xuống JSON
         document.getElementById('download-json').addEventListener('click', () => {
             const jsonBlob = new Blob([JSON.stringify(data, null, 4)], { type: 'application/json' });
             const url = URL.createObjectURL(jsonBlob);
@@ -102,6 +112,19 @@
             link.click();
 
             URL.revokeObjectURL(url);
+        });
+
+        // Sao chép JSON vào clipboard
+        document.getElementById('copy-json').addEventListener('click', () => {
+            const jsonText = JSON.stringify(data, null, 4);
+            navigator.clipboard.writeText(jsonText)
+                .then(() => {
+                    alert('Đã sao chép JSON vào clipboard!');
+                })
+                .catch(err => {
+                    console.error('Sao chép thất bại:', err);
+                    alert('Không thể sao chép JSON!');
+                });
         });
     </script>
 </body>

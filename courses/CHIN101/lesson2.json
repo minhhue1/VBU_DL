@@ -1,0 +1,52 @@
+[
+    {
+        "question": "十",
+        "answer": "thập",
+        "explanation": "十 thập: mười"
+    },
+    {
+        "question": "二十",
+        "answer": "nhị thập",
+        "explanation": "二十 nhị thập: hai mươi"
+    },
+    {
+        "question": "二十一",
+        "answer": "nhị thập nhất",
+        "explanation": "二十一 nhị thập nhất: hai mươi mốt"
+    },
+    {
+        "question": "二十二",
+        "answer": "nhị thập nhị",
+        "explanation": "二十二 nhị thập nhị: hai mươi hai"
+    },
+    {
+        "question": "二十三",
+        "answer": "nhị thập tam",
+        "explanation": "二十三 nhị thập tam: hai mươi ba"
+    },
+    {
+        "question": "中",
+        "answer": "trung",
+        "explanation": "中 trung: chính giữa, bên trong."
+    },
+    {
+        "question": "干",
+        "answer": "can",
+        "explanation": "干 can: thiên can; liên can, liên quan"
+    },
+    {
+        "question": "王",
+        "answer": "vương",
+        "explanation": "王 vương: vua"
+    },
+    {
+        "question": "川",
+        "answer": "xuyên",
+        "explanation": "川 xuyên: sông"
+    },
+    {
+        "question": "大川",
+        "answer": "đại xuyên",
+        "explanation": "大川 đại xuyên: sông lớn"
+    }
+]
