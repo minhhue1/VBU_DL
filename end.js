@@ -19,6 +19,7 @@ userAnswers.forEach((answer) => {
         // Hiển thị câu hỏi
         const questionText = document.createElement('p');
         questionText.innerText = answer.question;
+        questionText.style.fontSize = '3.1rem'; // Cập nhật cỡ chữ cho questionText
 
         // Hiển thị đáp án đã chọn (tô đỏ)
         const selectedAnswer = document.createElement('p');

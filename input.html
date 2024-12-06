@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON Generator</title>
+    <title>JSON Generator with Local Font</title>
     <style>
+        /* Định nghĩa font từ tệp cục bộ */
+        @font-face {
+            font-family: 'DFKaiSB';
+            src: url('./fonts/kaiu.ttf') format('truetype'); /* Đường dẫn tới tệp font */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Áp dụng font chữ */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'DFKaiSB', 'SimSun', 'PingFang SC', sans-serif;
             margin: 20px;
             line-height: 1.5;
         }
+
         form {
             margin-bottom: 20px;
         }
@@ -23,6 +33,7 @@
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-family: inherit; /* Đảm bảo sử dụng cùng font chữ */
         }
         button {
             padding: 10px 15px;
@@ -32,6 +43,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-family: inherit;
         }
         button:hover {
             background-color: #218838;
@@ -47,27 +59,28 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-family: inherit;
         }
     </style>
 </head>
 <body>
-    <h1>Tạo JSON từ dữ liệu nhập</h1>
+    <h1>生成 JSON 数据</h1>
     <form id="data-form">
-        <label for="question">Câu hỏi:</label>
-        <input type="text" id="question" placeholder="Nhập câu hỏi (e.g., 一)" required>
+        <label for="question">问题:</label>
+        <input type="text" id="question" placeholder="输入问题 (例如: 一)" required>
         
-        <label for="answer">Câu trả lời:</label>
-        <input type="text" id="answer" placeholder="Nhập câu trả lời (e.g., nhất)" required>
+        <label for="answer">答案:</label>
+        <input type="text" id="answer" placeholder="输入答案 (例如: nhất)" required>
         
-        <label for="explanation">Giải thích:</label>
-        <textarea id="explanation" placeholder="Nhập giải thích (e.g., 一 nhất: số một)" required></textarea>
+        <label for="explanation">解释:</label>
+        <textarea id="explanation" placeholder="输入解释 (例如: 一 nhất: số một)" required></textarea>
         
-        <button type="button" id="add-entry">Thêm vào danh sách</button>
-        <button type="button" id="download-json">Tải xuống JSON</button>
-        <button type="button" id="copy-json">Sao chép JSON</button>
+        <button type="button" id="add-entry">添加到列表</button>
+        <button type="button" id="download-json">下载 JSON</button>
+        <button type="button" id="copy-json">复制 JSON</button>
     </form>
 
-    <h2>Dữ liệu JSON:</h2>
+    <h2>JSON 数据:</h2>
     <pre id="json-output">[]</pre>
 
     <script>
@@ -97,7 +110,7 @@
                 answerInput.value = '';
                 explanationInput.value = '';
             } else {
-                alert('Vui lòng nhập đầy đủ thông tin!');
+                alert('请完整输入信息！');
             }
         });
 
@@ -119,11 +132,11 @@
             const jsonText = JSON.stringify(data, null, 4);
             navigator.clipboard.writeText(jsonText)
                 .then(() => {
-                    alert('Đã sao chép JSON vào clipboard!');
+                    alert('JSON 已复制到剪贴板!');
                 })
                 .catch(err => {
-                    console.error('Sao chép thất bại:', err);
-                    alert('Không thể sao chép JSON!');
+                    console.error('复制失败:', err);
+                    alert('无法复制 JSON!');
                 });
         });
     </script>

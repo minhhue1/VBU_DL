@@ -3,9 +3,24 @@
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: 'DFKaiSB';
+  src: url('./fonts/kaiu.ttf') format('truetype');
+  unicode-range: U+4E00-9FFF; /* Phạm vi chữ Hán */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Font mặc định cho chữ Latin (EN, VN) */
+}
+
+.han-text {
+  font-family: 'DFKaiSB', sans-serif; /* Áp dụng font chữ Hán */
+  font-size: 3.1rem; /* Cỡ chữ cho chữ Hán */
+}
+
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'DFKaiSB', 'SimSun', 'PingFang SC', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
