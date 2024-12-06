@@ -43,5 +43,25 @@
         "question": "王",
         "answer": "vương",
         "explanation": "王 vương: vua"
+    },
+    {
+        "question": "一一",
+        "answer": "nhất nhất",
+        "explanation": "一一 nhất nhất: Tất cả, từ đầu đến cuối, không sót cái gì."
+    },
+    {
+        "question": "十一",
+        "answer": "thập nhất",
+        "explanation": "十一 thập nhất: mười một"
+    },
+    {
+        "question": "二十",
+        "answer": "nhị thập",
+        "explanation": "二十 nhị thập: hai mươi"
+    },
+    {
+        "question": "十二",
+        "answer": "thập nhị",
+        "explanation": "十二 thập nhị: mười hai"
     }
 ]
