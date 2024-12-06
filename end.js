@@ -12,7 +12,7 @@ const userAnswers = JSON.parse(localStorage.getItem('userAnswers'));
 const incorrectAnswersContainer = document.getElementById('incorrectAnswers');
 
 userAnswers.forEach((answer) => {
-    if (answer.selectedAnswer !== answer.correctAnswer) {
+    if (answer.selectedAnswer.trim().toLowerCase() !== answer.correctAnswer.toLowerCase()) {
         const questionElement = document.createElement('div');
         questionElement.classList.add('incorrect-answer');
 

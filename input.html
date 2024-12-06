@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.5;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tạo JSON từ dữ liệu nhập</h1>
+    <form id="data-form">
+        <label for="question">Câu hỏi:</label>
+        <input type="text" id="question" placeholder="Nhập câu hỏi (e.g., 一)" required>
+        
+        <label for="answer">Câu trả lời:</label>
+        <input type="text" id="answer" placeholder="Nhập câu trả lời (e.g., nhất)" required>
+        
+        <label for="explanation">Giải thích:</label>
+        <textarea id="explanation" placeholder="Nhập giải thích (e.g., 一 nhất: số một)" required></textarea>
+        
+        <button type="button" id="add-entry">Thêm vào danh sách</button>
+        <button type="button" id="download-json">Tải xuống JSON</button>
+    </form>
+
+    <h2>Dữ liệu JSON:</h2>
+    <pre id="json-output">[]</pre>
+
+    <script>
+        const data = []; // Lưu trữ dữ liệu nhập
+
+        const form = document.getElementById('data-form');
+        const questionInput = document.getElementById('question');
+        const answerInput = document.getElementById('answer');
+        const explanationInput = document.getElementById('explanation');
+        const jsonOutput = document.getElementById('json-output');
+
+        document.getElementById('add-entry').addEventListener('click', () => {
+            const question = questionInput.value.trim();
+            const answer = answerInput.value.trim();
+            const explanation = explanationInput.value.trim();
+
+            if (question && answer && explanation) {
+                // Thêm dữ liệu vào mảng
+                data.push({ question, answer, explanation });
+
+                // Cập nhật hiển thị JSON
+                jsonOutput.textContent = JSON.stringify(data, null, 4);
+
+                // Xóa các ô nhập sau khi thêm
+                questionInput.value = '';
+                answerInput.value = '';
+                explanationInput.value = '';
+            } else {
+                alert('Vui lòng nhập đầy đủ thông tin!');
+            }
+        });
+
+        document.getElementById('download-json').addEventListener('click', () => {
+            const jsonBlob = new Blob([JSON.stringify(data, null, 4)], { type: 'application/json' });
+            const url = URL.createObjectURL(jsonBlob);
+            const link = document.createElement('a');
+
+            link.href = url;
+            link.download = 'data.json';
+            link.click();
+
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>

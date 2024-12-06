@@ -1,12 +1,47 @@
 [
     {
-        "question": "你好",
-        "answer": "Xin chào",
-        "explanation": "你好 là Xin chào"
+        "question": "一",
+        "answer": "nhất",
+        "explanation": "一 nhất: số một"
     },
     {
-        "question": "test1",
-        "answer": "Xin chào",
-        "explanation": "你好 là Xin chào"
+        "question": "二",
+        "answer": "nhị",
+        "explanation": "二 nhị: hai"
+    },
+    {
+        "question": "三",
+        "answer": "tam",
+        "explanation": "三 tam: ba"
+    },
+    {
+        "question": "十",
+        "answer": "thập",
+        "explanation": "十 thập: mười"
+    },
+    {
+        "question": "大",
+        "answer": "đại",
+        "explanation": "大 đại: lớn"
+    },
+    {
+        "question": "干",
+        "answer": "can",
+        "explanation": "干 can: thiên can; liên can, liên quan"
+    },
+    {
+        "question": "天",
+        "answer": "thiên",
+        "explanation": "天 thiên: trời"
+    },
+    {
+        "question": "夫",
+        "answer": "phu",
+        "explanation": "夫 phu: chồng"
+    },
+    {
+        "question": "王",
+        "answer": "vương",
+        "explanation": "王 vương: vua"
     }
 ]
