@@ -42,37 +42,37 @@
     {
         "question": "十天干",
         "answer": "thập thiên can",
-        "explanation": "Mười thiên can (Giáp, Ất, Bính, Đinh, Mậu, Kỉ, Canh, Tân, Nhâm, Quý 甲乙丙丁戊己庚辛壬癸)"
+        "explanation": "十天干 thập thiên can: Mười thiên can (Giáp, Ất, Bính, Đinh, Mậu, Kỉ, Canh, Tân, Nhâm, Quý 甲乙丙丁戊己庚辛壬癸)"
     },
     {
         "question": "人天",
         "answer": "nhân thiên",
-        "explanation": "Cõi người và cõi trời."
+        "explanation": "人天 nhân thiên: Cõi người và cõi trời."
     },
     {
         "question": "天人",
         "answer": "thiên nhân",
-        "explanation": "Chư thiên, Cõi người và cõi trời."
+        "explanation": "天人 thiên nhân: hư thiên, Cõi người và cõi trời."
     },
     {
         "question": "人大",
         "answer": "nhân đại",
-        "explanation": "người lớn"
+        "explanation": "人大 nhân đại: người lớn"
     },
     {
         "question": "大人",
         "answer": "đại nhân",
-        "explanation": "người lớn, quan lớn, cha."
+        "explanation": "大人 đại nhân: người lớn, quan lớn, cha."
     },
     {
         "question": "夫人",
         "answer": "phu nhân",
-        "explanation": "phu nhân; vợ"
+        "explanation": "夫人 phu nhân: phu nhân; vợ"
     },
     {
         "question": "人中",
         "answer": "nhân trung",
-        "explanation": "Chỗ lõm ở giữa môi\n人中天上 (trên trời trong thế gian)"
+        "explanation": "人中 nhân trung: Chỗ lõm ở giữa môi\n人中天上 (trên trời trong thế gian)"
     },
     {
         "question": "大",
@@ -87,12 +87,12 @@
     {
         "question": "人才",
         "answer": "nhân tài",
-        "explanation": "Tài năng của con người.\nNgười giỏi."
+        "explanation": "人才 nhân tài: Tài năng của con người.\nNgười giỏi."
     },
     {
         "question": "大才",
         "answer": "đại tài",
-        "explanation": "Rất giỏi"
+        "explanation": "大才 đại tài: Rất giỏi"
     },
     {
         "question": "千",
@@ -132,11 +132,11 @@
     {
         "question": "天水",
         "answer": "thiên thuỷ",
-        "explanation": "天水: Nước trên trời, nước mưa"
+        "explanation": "天水 thiên thuỷ: Nước trên trời, nước mưa"
     },
     {
         "question": "大水",
         "answer": "đại thuỷ",
-        "explanation": "大水: Lũ, lụt, nạn lụt, hồng thuỷ"
+        "explanation": "大水 đại thuỷ: Lũ, lụt, nạn lụt, hồng thuỷ"
     }
 ]
