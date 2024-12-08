@@ -33,14 +33,16 @@ let MAX_QUESTIONS;
 
 async function loadQuestions() {
     if (currentLesson === 'test') {
-        await loadQuestionsByLesson(currentRegion);  // Tải câu hỏi từ tất cả các bài học
-    } else if (currentLesson === 'all') {
-        await loadQuestionAll(currentRegion);
+        await loadQuestionsByLesson(currentRegion); // Tải câu hỏi từ tất cả các bài học
+    } else if (currentLesson === 'single' || currentLesson === 'vocal') {
+        NUM_LESSONS = 5; // Gán số bài học cần tải
+        await loadQuestionAll();
     } else {
-        await loadQuestionsFromFile(currentLesson);  // Tải câu hỏi từ bài học cụ thể
+        await loadQuestionsFromFile(currentLesson); // Tải câu hỏi từ bài học cụ thể
     }
-    startGame();  // Bắt đầu trò chơi khi đã tải xong câu hỏi
+    startGame(); // Bắt đầu trò chơi khi đã tải xong câu hỏi
 }
+
 
 // Hàm trộn mảng
 function shuffle(array) {
@@ -121,15 +123,28 @@ async function loadQuestionsByLesson(region) {
     MAX_QUESTIONS = questions.length;
 }
 
+function filterSingleCharacterQuestions(questions) {
+    // Lọc các câu hỏi chỉ chứa 1 ký tự chữ Hán
+    return questions.filter(q => q.question.length === 1);
+}
+
+function filterVocabularyQuestions(questions) {
+    // Lọc các câu hỏi chứa nhiều hơn 1 ký tự chữ Hán
+    return questions.filter(q => q.question.length > 1);
+}
+
+
 // Hàm tải tất cả câu hỏi theo thứ tự
-async function loadQuestionAll(region) {
+async function loadQuestionAll() {
+    // alert(NUM_LESSONS);
     questions = [];
     let totalQuestionsInLessons = 0;
     let lessonData = [];
 
     // Bước 1: Tính tổng số câu hỏi trong tất cả các bài học
     for (let lesson = 1; lesson <= NUM_LESSONS; lesson++) {
-        const jsonFile = `region/${region}/lesson${lesson}.json`;
+        // alert(lesson);
+        const jsonFile = `courses/CHIN101/lesson${lesson}.json`;
         try {
             const res = await fetch(jsonFile);
             const lessonQuestions = await res.json();
@@ -157,6 +172,12 @@ async function loadQuestionAll(region) {
             }
         });
     });
+
+    if (currentLesson === 'single'){
+        questions = filterSingleCharacterQuestions(questions);
+    } else if (currentLesson === 'vocal'){
+        questions = filterVocabularyQuestions(questions);
+    }
 
     console.log(questions)
     MAX_QUESTIONS = questions.length;
