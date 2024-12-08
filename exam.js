@@ -35,7 +35,7 @@ async function loadQuestions() {
     if (currentLesson === 'test') {
         await loadQuestionsByLesson(currentRegion); // Tải câu hỏi từ tất cả các bài học
     } else if (currentLesson === 'single' || currentLesson === 'vocal') {
-        NUM_LESSONS = 5; // Gán số bài học cần tải
+        NUM_LESSONS = 6; // Gán số bài học cần tải
         await loadQuestionAll();
     } else {
         await loadQuestionsFromFile(currentLesson); // Tải câu hỏi từ bài học cụ thể
