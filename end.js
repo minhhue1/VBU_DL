@@ -42,8 +42,8 @@ userAnswers.forEach((answer) => {
 });
 
 // Cập nhật link "Làm lại" với lesson hiện tại
-const retryBtn = document.querySelector('a[href="exam.html"]');
-retryBtn.href = `exam.html?lesson=${currentLesson}`;
+const retryBtn = document.querySelector('a[href="chin.html"]');
+retryBtn.href = `chin.html?lesson=${currentLesson}`;
 
 // Cập nhật link "Trang chủ" với region hiện tại
 const homeBtn = document.querySelector('a[href="index.html"]');

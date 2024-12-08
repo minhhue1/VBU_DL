@@ -175,8 +175,10 @@ async function loadQuestionAll() {
 
     if (currentLesson === 'single'){
         questions = filterSingleCharacterQuestions(questions);
+        shuffle(questions);  // Trộn ngẫu nhiên tất cả câu hỏi đã chọn
     } else if (currentLesson === 'vocal'){
         questions = filterVocabularyQuestions(questions);
+        shuffle(questions);  // Trộn ngẫu nhiên tất cả câu hỏi đã chọn
     }
 
     console.log(questions)
