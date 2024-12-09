@@ -31,7 +31,7 @@ if (!currentLesson) {
 }
 
 let MAX_QUESTIONS;
-let paragraph = 1;
+let listening = 1;
 
 async function loadQuestions() {
     if (currentLesson === 'test') {
@@ -40,7 +40,7 @@ async function loadQuestions() {
         NUM_LESSONS = 6; // Gán số bài học cần tải
         await loadQuestionAll(currentCourse);
     } else {
-        await loadQuestionsFromFile(currentCourse, currentLesson, paragraph); // Tải câu hỏi từ bài học cụ thể
+        await loadQuestionsFromFile(currentCourse, currentLesson, listening); // Tải câu hỏi từ bài học cụ thể
     }
     startGame(); // Bắt đầu trò chơi khi đã tải xong câu hỏi
 }
@@ -56,8 +56,8 @@ function shuffle(array) {
 }
 
 // Hàm tải câu hỏi từ một bài học cụ thể
-async function loadQuestionsFromFile(course, lesson, paragraph) {
-    const jsonFile = `../../courses/${course}/lesson${lesson}/skill/listening/paragraph${paragraph}.json`;
+async function loadQuestionsFromFile(course, lesson, listening) {
+    const jsonFile = `../../courses/${course}/lesson${lesson}/skill/listening/listening${listening}.json`;
     try {
         const res = await fetch(jsonFile);
         const loadedQuestions = await res.json();
@@ -430,7 +430,7 @@ function closeHints() {
 function removePunctuation(text) {
     // Thay thế tất cả dấu nháy cong ’ thành dấu nháy thẳng '
     text = text.replace(/’/g, "'");  
-    return text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"…]/g, "").trim();
+    return text.replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()"…]/g, "").trim();
 }
 
 
