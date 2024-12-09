@@ -3,6 +3,21 @@
   font-size: 62.5%;
 }
 
+#answer {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 250px; /* Chiều cao tối thiểu */
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical; /* Cho phép người dùng thay đổi kích thước theo chiều dọc */
+  margin-bottom: 10px;
+}
+
+
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
