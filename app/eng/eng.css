@@ -15,6 +15,17 @@
   box-sizing: border-box;
   resize: vertical; /* Cho phép người dùng thay đổi kích thước theo chiều dọc */
   margin-bottom: 10px;
+  z-index: 200;
+}
+
+span {
+  text-decoration: underline;
+  color: orange;
+  font-weight: bold;
+}
+
+#audioPlayer {
+  z-index: 200;
 }
 
 
@@ -117,7 +128,6 @@
   left: 0;
   width: 100vw; /* Chiếm toàn bộ chiều rộng của màn hình */
   height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
-  z-index: 100; /* Đảm bảo nó xuất hiện trên các phần tử khác */
 }
 
 #explanation-content {
@@ -155,6 +165,7 @@
   cursor: pointer;
   font-weight: bold; /* Nếu muốn chữ đậm */
   font-size: 1.7rem;
+  z-index: 200;
 }
 
 #next-button:hover, 

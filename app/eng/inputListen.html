@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #download-json {
+            background-color: #007bff;
+        }
+        #download-json:hover {
+            background-color: #0056b3;
+        }
+        #copy-json {
+            background-color: #ffc107;
+        }
+        #copy-json:hover {
+            background-color: #e0a800;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate JSON Data</h1>
+    <form id="data-form">
+        <label for="start-index">Start Index (X):</label>
+        <input type="number" id="start-index" placeholder="Enter starting index (e.g., 1)" value="1" required>
+
+        <label for="english">English:</label>
+        <input type="text" id="english" placeholder="Enter English text" required>
+        
+        <button type="button" id="add-entry">Add to List</button>
+        <button type="button" id="download-json">Download JSON</button>
+        <button type="button" id="copy-json">Copy JSON</button>
+    </form>
+
+    <h2>JSON Data:</h2>
+    <pre id="json-output">[]</pre>
+
+    <script>
+        const data = []; // Lưu trữ dữ liệu nhập
+        const startIndexInput = document.getElementById('start-index');
+        const englishInput = document.getElementById('english');
+        const jsonOutput = document.getElementById('json-output');
+
+        let entryCount = 0; // Biến đếm số lượng mục nhập (sẽ khởi tạo từ X)
+
+        // Thêm dữ liệu vào danh sách
+        document.getElementById('add-entry').addEventListener('click', () => {
+            const startIndex = parseInt(startIndexInput.value, 10);
+            if (isNaN(startIndex) || startIndex <= 0) {
+                alert('Please enter a valid starting index (X > 0)!');
+                return;
+            }
+
+            if (entryCount === 0) {
+                entryCount = startIndex - 1; // Khởi tạo biến đếm từ giá trị X
+            }
+
+            const english = englishInput.value.trim();
+            if (english) {
+                entryCount++;
+                const audioPath = `../../courses/ENG101/lesson1/skill/audio/Religious_Education_and_the_Buddhas_Teaching_${entryCount}.MP3`;
+
+                // Thêm dữ liệu vào mảng
+                data.push({ english, audio: audioPath });
+
+                // Cập nhật hiển thị JSON
+                jsonOutput.textContent = JSON.stringify(data, null, 4);
+
+                // Xóa ô nhập sau khi thêm
+                englishInput.value = '';
+            } else {
+                alert('Please enter English text!');
+            }
+        });
+
+        // Tải xuống JSON
+        document.getElementById('download-json').addEventListener('click', () => {
+            const jsonBlob = new Blob([JSON.stringify(data, null, 4)], { type: 'application/json' });
+            const url = URL.createObjectURL(jsonBlob);
+            const link = document.createElement('a');
+
+            link.href = url;
+            link.download = 'data.json';
+            link.click();
+
+            URL.revokeObjectURL(url);
+        });
+
+        // Sao chép JSON vào clipboard
+        document.getElementById('copy-json').addEventListener('click', () => {
+            const jsonText = JSON.stringify(data, null, 4);
+            navigator.clipboard.writeText(jsonText)
+                .then(() => {
+                    alert('JSON has been copied to clipboard!');
+                })
+                .catch(err => {
+                    console.error('Copy failed:', err);
+                    alert('Unable to copy JSON!');
+                });
+        });
+    </script>
+</body>
+</html>
