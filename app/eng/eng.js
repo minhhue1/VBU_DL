@@ -56,7 +56,7 @@ function shuffle(array) {
 
 // Hàm tải câu hỏi từ một bài học cụ thể
 async function loadQuestionsFromFile(course, lesson) {
-    const jsonFile = `/courses/${course}/lesson${lesson}/vocal.json`;
+    const jsonFile = `./courses/${course}/lesson${lesson}/vocal.json`;
     try {
         const res = await fetch(jsonFile);
         const loadedQuestions = await res.json();
@@ -145,7 +145,7 @@ async function loadQuestionAll(course) {
     // Bước 1: Tính tổng số câu hỏi trong tất cả các bài học
     for (let lesson = 1; lesson <= NUM_LESSONS; lesson++) {
         // alert(lesson);
-        const jsonFile = `/courses/${course}/lesson${lesson}.json`;
+        const jsonFile = `./courses/${course}/lesson${lesson}.json`;
         try {
             const res = await fetch(jsonFile);
             const lessonQuestions = await res.json();
