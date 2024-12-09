@@ -207,7 +207,7 @@ function getNewQuestion() {
         localStorage.setItem('max_questions', MAX_QUESTIONS);
         localStorage.setItem('userAnswers', JSON.stringify(userAnswers));  // Lưu câu trả lời người dùng
         setTimeout(() => {
-            window.location.assign('end.html');
+            // window.location.assign('end.html');
         }, 100);
         return;
     }
