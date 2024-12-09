@@ -426,10 +426,13 @@ function closeHints() {
 }
 
 
-// Hàm loại bỏ dấu câu
+// Hàm loại bỏ dấu câu và chuẩn hóa dấu nháy
 function removePunctuation(text) {
+    // Thay thế tất cả dấu nháy cong ’ thành dấu nháy thẳng '
+    text = text.replace(/’/g, "'");  
     return text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"…]/g, "").trim();
 }
+
 
 // Hàm tính indexWord
 function calculateIndexWord(userAnswer, correctAnswer) {
