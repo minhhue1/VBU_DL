@@ -1,0 +1,183 @@
+:root {
+  background-color: #ecf5ff;
+  font-size: 62.5%;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  background-color: white;
+}
+
+#question {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1rem 1rem;
+  /* background-color: #56a5eb; */
+  background-color: rgb(56, 141, 182);
+  color: white;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid rgb(56, 141, 182);
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: rgb(56, 141, 182);
+  width: 0%;
+}
+
+/* LOADER */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid rgb(56, 141, 182);
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+#explanation-popup {
+  display: none; /* Mặc định ẩn popup */
+  position: fixed; /* Đảm bảo popup cố định trên màn hình */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Chiếm toàn bộ chiều rộng của màn hình */
+  height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
+  z-index: 100; /* Đảm bảo nó xuất hiện trên các phần tử khác */
+}
+
+#explanation-content {
+  display: none;
+  flex-direction: column; /* Đặt chiều dọc cho các phần tử con */
+  background-color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 200;
+}
+
+#content-text {
+  flex-grow: 1; /* Để phần văn bản chiếm toàn bộ không gian có sẵn */
+  overflow-y: auto; /* Thêm cuộn dọc khi nội dung quá dài */
+}
+
+#explanation-text {
+  font-size: 1.7rem; /* Chỉnh kích thước chữ theo ý muốn */
+  color: white;
+  margin-bottom: 1rem; /* Thêm khoảng cách giữa chữ và nút */
+  white-space: pre-line; /* Giữ định dạng xuống dòng nếu có */
+}
+
+#button-container {
+  display: flex; /* Chuyển sang chế độ flex */
+  justify-content: flex-end; /* Căn chỉnh nút về phía bên phải */
+}
+
+#next-button, 
+#submit {
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold; /* Nếu muốn chữ đậm */
+  font-size: 1.7rem;
+}
+
+#next-button:hover, 
+#submit:hover {
+  background-color: rgb(240, 240, 240);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+/* Video container mặc định (desktop) */
+.video-container {
+  position: relative;
+  width: 600px; /* Kích thước chuẩn cho desktop */
+  height: 315px; /* Tỷ lệ 16:9 */
+  overflow: hidden;
+  margin: auto; /* Canh giữa cho đẹp */
+}
+
+/* Iframe mặc định */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive cho thiết bị có màn hình nhỏ (dưới 768px) */
+@media (max-width: 768px) {
+  .video-container {
+    width: 100%; /* Chiều rộng đầy đủ */
+    padding-bottom: 56.25%; /* Giữ tỷ lệ 16:9 */
+    height: 0; /* Chiều cao sẽ phụ thuộc vào padding-bottom */
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

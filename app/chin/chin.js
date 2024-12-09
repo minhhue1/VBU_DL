@@ -25,6 +25,7 @@ function getParameterByName(name) {
 }
 
 let currentLesson = getParameterByName('lesson');
+let currentCourse = getParameterByName('course');
 if (!currentLesson) {
     currentLesson = 1;  // Nếu không có bài học nào, mặc định là bài học 1
 }
@@ -36,9 +37,9 @@ async function loadQuestions() {
         await loadQuestionsByLesson(currentRegion); // Tải câu hỏi từ tất cả các bài học
     } else if (currentLesson === 'single' || currentLesson === 'vocal') {
         NUM_LESSONS = 6; // Gán số bài học cần tải
-        await loadQuestionAll();
+        await loadQuestionAll(currentCourse);
     } else {
-        await loadQuestionsFromFile(currentLesson); // Tải câu hỏi từ bài học cụ thể
+        await loadQuestionsFromFile(currentCourse, currentLesson); // Tải câu hỏi từ bài học cụ thể
     }
     startGame(); // Bắt đầu trò chơi khi đã tải xong câu hỏi
 }
@@ -54,8 +55,8 @@ function shuffle(array) {
 }
 
 // Hàm tải câu hỏi từ một bài học cụ thể
-async function loadQuestionsFromFile(lesson) {
-    const jsonFile = `courses/CHIN101/lesson${lesson}.json`;
+async function loadQuestionsFromFile(course, lesson) {
+    const jsonFile = `/courses/${course}/lesson${lesson}.json`;
     try {
         const res = await fetch(jsonFile);
         const loadedQuestions = await res.json();
@@ -135,7 +136,7 @@ function filterVocabularyQuestions(questions) {
 
 
 // Hàm tải tất cả câu hỏi theo thứ tự
-async function loadQuestionAll() {
+async function loadQuestionAll(course) {
     // alert(NUM_LESSONS);
     questions = [];
     let totalQuestionsInLessons = 0;
@@ -144,7 +145,7 @@ async function loadQuestionAll() {
     // Bước 1: Tính tổng số câu hỏi trong tất cả các bài học
     for (let lesson = 1; lesson <= NUM_LESSONS; lesson++) {
         // alert(lesson);
-        const jsonFile = `courses/CHIN101/lesson${lesson}.json`;
+        const jsonFile = `/courses/${course}/lesson${lesson}.json`;
         try {
             const res = await fetch(jsonFile);
             const lessonQuestions = await res.json();
@@ -202,7 +203,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         localStorage.setItem('currentLesson', currentLesson);
-        // localStorage.setItem('currentRegion', currentRegion);
+        localStorage.setItem('currentCourse', currentCourse);
         localStorage.setItem('max_questions', MAX_QUESTIONS);
         localStorage.setItem('userAnswers', JSON.stringify(userAnswers));  // Lưu câu trả lời người dùng
         setTimeout(() => {
@@ -332,43 +333,43 @@ function closePopup() {
 
 
 
-choices.forEach((choice) => {
-    choice.addEventListener('click', (e) => {
-        if (!acceptingAnswers) return;
+// choices.forEach((choice) => {
+//     choice.addEventListener('click', (e) => {
+//         if (!acceptingAnswers) return;
 
-        acceptingAnswers = false;
-        selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.innerText;
+//         acceptingAnswers = false;
+//         selectedChoice = e.target;
+//         const selectedAnswer = selectedChoice.innerText;
 
-        globalClassToApply =
-            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+//         globalClassToApply =
+//             selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-        // Lưu câu hỏi và câu trả lời người dùng
-        userAnswers.push({
-            question: currentQuestion.question,
-            selectedAnswer: selectedAnswer,
-            correctAnswer: currentQuestion.answer,
-        });
+//         // Lưu câu hỏi và câu trả lời người dùng
+//         userAnswers.push({
+//             question: currentQuestion.question,
+//             selectedAnswer: selectedAnswer,
+//             correctAnswer: currentQuestion.answer,
+//         });
 
-        if (globalClassToApply === 'correct') {
-            incrementScore(CORRECT_BONUS);
-            document.getElementById('explanation-content').style.backgroundColor = 'rgb(83, 170, 72)';
-        } else {
-            document.getElementById('explanation-content').style.backgroundColor = 'rgb(218, 96, 93)';
-            // Tìm và tô xanh đáp án đúng
-            choices.forEach((choice) => {
-                if (choice.innerText === currentQuestion.answer) {
-                    choice.parentElement.classList.add('correct');  // Tô xanh đáp án đúng
-                }
-            });
-        }
+//         if (globalClassToApply === 'correct') {
+//             incrementScore(CORRECT_BONUS);
+//             document.getElementById('explanation-content').style.backgroundColor = 'rgb(83, 170, 72)';
+//         } else {
+//             document.getElementById('explanation-content').style.backgroundColor = 'rgb(218, 96, 93)';
+//             // Tìm và tô xanh đáp án đúng
+//             choices.forEach((choice) => {
+//                 if (choice.innerText === currentQuestion.answer) {
+//                     choice.parentElement.classList.add('correct');  // Tô xanh đáp án đúng
+//                 }
+//             });
+//         }
 
-        selectedChoice.parentElement.classList.add(globalClassToApply);
+//         selectedChoice.parentElement.classList.add(globalClassToApply);
 
-        // Hiển thị giải thích
-        openPopup()
-    });
-});
+//         // Hiển thị giải thích
+//         openPopup()
+//     });
+// });
 
 // Xử lý kiểm tra đáp án
 function checkAnswer() {
