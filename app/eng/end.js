@@ -41,8 +41,8 @@ userAnswers.forEach((answer) => {
 });
 
 // Cập nhật link "Làm lại" với lesson hiện tại
-const retryBtn = document.querySelector('a[href="chin.html"]');
-retryBtn.href = `chin.html?course=${currentCourse}&lesson=${currentLesson}`;
+const retryBtn = document.querySelector('a[href="eng.html"]');
+retryBtn.href = `eng.html?course=${currentCourse}&lesson=${currentLesson}`;
 
 let index = `${currentCourse}`;
 index = index.toLowerCase();
