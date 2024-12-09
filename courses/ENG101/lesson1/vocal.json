@@ -108,7 +108,7 @@
         "english": "principal thing"
     },
     {
-        "vietnamese": "thiện lành, hướng thiên",
+        "vietnamese": "thiện lành, hướng thiện",
         "english": "wholesome"
     },
     {
@@ -135,10 +135,24 @@
         "vietnamese": "có trí tuệ, khôn ngoan",
         "english": "wise"
     },
-    [
-        {
-            "vietnamese": "trong đời này và đời sau",
-            "english": "in this world and hereafter"
-        }
-    ]
+    {
+        "vietnamese": "trong đời này và đời sau",
+        "english": "in this world and hereafter"
+    },
+    {
+        "vietnamese": "Không làm điều ác",
+        "english": "Not to do evil"
+    },
+    {
+        "vietnamese": "Luôn làm điều thiện",
+        "english": "To perform good"
+    },
+    {
+        "vietnamese": "Thanh lọc tâm ý",
+        "english": "To purify one's mind"
+    },
+    {
+        "vietnamese": "Đây là lời lại của chư Phật",
+        "english": "This is the teaching of the Buddhas"
+    }
 ]
