@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'DFKaiSB';
-  src: url('/fonts/kaiu.ttf') format('truetype');
+  src: url('../../fonts/kaiu.ttf') format('truetype');
   unicode-range: U+4E00-9FFF; /* Phạm vi chữ Hán */
 }
 
