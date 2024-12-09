@@ -467,11 +467,9 @@ function checkAnswer() {
     if (normalizedUserAnswer.toLowerCase() === normalizedCorrectAnswer.toLowerCase()) {
         incrementScore(CORRECT_BONUS);
         document.getElementById('explanation-content').style.backgroundColor = 'rgb(83, 170, 72)';
-        document.getElementById('next-button').style.display = 'block';
     } else {
         document.getElementById('explanation-content').style.backgroundColor = 'rgb(255, 255, 255)';
         document.getElementById('explanation-text').style.color = 'rgb(0, 0, 0)';
-        document.getElementById('next-button').style.display = 'none';
     }
 
     // Hiển thị giá trị indexWord (nếu cần)
@@ -481,23 +479,26 @@ function checkAnswer() {
     const userAnswerSplit = userAnswer.split(" ");
     let textShow = "";
 
-    // Thêm các từ đúng liên tiếp từ đầu đến indexWord
-    for (let i = 0; i < indexWord; i++) {
-        textShow += correctWords[i] + " ";
-    }
-
-    // Thêm các từ từ câu trả lời người dùng sau indexWord
-    for (let i = indexWord + 1; i < userAnswerSplit.length; i++) {
-        textShow += userAnswerSplit[i] + " ";
-    }
-
-    // Cập nhật giá trị của trường `answer` với textShow
-    answerElement.value = textShow.trim();
-
     // Mở popup hoặc gợi ý
     if (indexWord === -1) {
+        for (let i = 0; i < correctWords.length; i++) {
+            textShow += correctWords[i] + " ";
+        }
+        // Cập nhật giá trị của trường `answer` với textShow
+        answerElement.value = textShow.trim();
         openPopup();
     } else {
+        // Thêm các từ đúng liên tiếp từ đầu đến indexWord
+        for (let i = 0; i < indexWord; i++) {
+            textShow += correctWords[i] + " ";
+        }
+
+        // Thêm các từ từ câu trả lời người dùng sau indexWord
+        for (let i = indexWord; i < userAnswerSplit.length; i++) {
+            textShow += userAnswerSplit[i] + " ";
+        }
+        // Cập nhật giá trị của trường `answer` với textShow
+        answerElement.value = textShow.trim();
         openHints(indexWord);
     }
 }
@@ -513,3 +514,15 @@ function incrementScore(num) {
 
 // Gọi hàm loadQuestions khi bắt đầu game
 loadQuestions();
+
+// Get the answer input field
+const answerElement = document.getElementById('answer');
+
+// Add event listener for keydown event
+answerElement.addEventListener('keydown', function(event) {
+    // Check if the pressed key is "Enter"
+    if (event.key === 'Enter') {
+        event.preventDefault();  // Prevent form submission (if any)
+        checkAnswer();           // Call the checkAnswer function
+    }
+});

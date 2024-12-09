@@ -160,7 +160,7 @@ span {
 #submit {
   padding: 1rem 2rem;
   background-color: white;
-  color: black;
+  color: green;
   border: none;
   cursor: pointer;
   font-weight: bold; /* Nếu muốn chữ đậm */
