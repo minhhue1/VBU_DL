@@ -12,7 +12,11 @@ const userAnswers = JSON.parse(localStorage.getItem('userAnswers'));
 const incorrectAnswersContainer = document.getElementById('incorrectAnswers');
 
 userAnswers.forEach((answer) => {
-    if (answer.selectedAnswer.trim().toLowerCase() !== answer.correctAnswer.toLowerCase()) {
+    // Lấy danh sách các đáp án đúng (phân tách bởi `/`)
+    const correctAnswers = answer.correctAnswer.split('/').map(ans => ans.trim().toLowerCase());
+    const userAnswer = answer.selectedAnswer.trim().toLowerCase();
+
+    if (!correctAnswers.includes(userAnswer)) {
         const questionElement = document.createElement('div');
         questionElement.classList.add('incorrect-answer');
 
