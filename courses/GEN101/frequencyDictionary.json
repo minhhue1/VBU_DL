@@ -1,0 +1,65 @@
+[
+    {
+        "question": "Chọn câu đúng",
+        "choice1": "sửa chữa",
+        "choice2": "sữa chữa",
+        "answer": "sữa chữa",
+        "explanation": "- sửa: Làm cho hết chỗ hỏng, làm cho tốt lại, lại dùng được.\n- sữa: sữa tươi, sữa tắm, ..."
+    },
+    {
+        "question": "Chọn câu đúng",
+        "choice1": "xa thẫm",
+        "choice2": "xa thẳm",
+        "answer": "xa thẳm",
+        "explanation": "- thẫm: xanh thẫm, đỏ thẫm\n- thẳm: Sâu hay xa đến mức hút tầm mắt, nhìn như không thấy đâu là cùng, là tận. (Núi cao vực thẳm. Đường xa dặm thẳm. Sâu thẳm. Xa thẳm. Đôi mắt buồn thẳm.)"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "choice1": "đỏ thẳm",
+        "choice2": "đỏ thẫm",
+        "answer": "đỏ thẫm",
+        "explanation": "- thẫm: xanh thẫm, đỏ thẫm\n- thẳm: Sâu hay xa đến mức hút tầm mắt, nhìn như không thấy đâu là cùng, là tận. (Núi cao vực thẳm. Đường xa dặm thẳm. Sâu thẳm. Xa thẳm. Đôi mắt buồn thẳm.)"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "choice1": "viễn vọng (kính)",
+        "choice2": "viển vọng (kính)",
+        "answer": "viễn vọng (kính)",
+        "explanation": "* viễn\n1 Xa.\n- bệnh viễn thị\n- truyện khoa học viễn tưởng\n- kính nhi viễn chi\n\n* viển: viển vông, viển cảnh"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "choice1": "viễn vông",
+        "choice2": "viển vông",
+        "answer": "viển vông",
+        "explanation": "* viễn\n1 Xa.\n- bệnh viễn thị\n- truyện khoa học viễn tưởng\n- kính nhi viễn chi\n\n* viển: viển vông, viển cảnh"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "choice1": "cỏ mộc lấp lối đi",
+        "choice2": "cỏ mọc lắp lối đi",
+        "answer": "cỏ mộc lấp lối đi",
+        "explanation": "* lấp\n1. Làm cho đầy, cho kín chỗ trũng, chỗ hổng hay chỗ trống.\n- Lấp ao.\n- Hát để lấp chỗ trống.\n2. Làm che khuất đi.\n- Cỏ mọc lấp cả lối đi.\n- Che lấp.\n3. Làm cho bị át đi không còn nghe thấy, nhận thấy nữa.\n- Tiếng vỗ tay lấp cả tiếng hát.\n- Đánh trống lấp.\n\n* lắp\n1. Làm cho từng bộ phận rời được đặt đúng vị trí của nó để tất cả các bộ phận hợp lại tạo nên vật hoàn chỉnh, có công dụng.\n- Lắp máy.\n- Lắp xe đạp.\n- Lắp cửa vào khung.\n- Lắp đạn (để có thể bắn).\n2. (Thường dùng trước lại) . Như lặp.\n- Bài văn có nhiều ý lắp lại.\n- Lắp đi lắp lại mãi một giọng điệu."
+    },
+    {
+        "question": "Chọn câu đúng",
+        "choice1": "lấp cửa vào khung",
+        "choice2": "lắp cửa vào khung",
+        "answer": "lắp cửa vào khung",
+        "explanation": "* lấp\n1. Làm cho đầy, cho kín chỗ trũng, chỗ hổng hay chỗ trống.\n- Lấp ao.\n- Hát để lấp chỗ trống.\n2. Làm che khuất đi.\n- Cỏ mọc lấp cả lối đi.\n- Che lấp.\n3. Làm cho bị át đi không còn nghe thấy, nhận thấy nữa.\n- Tiếng vỗ tay lấp cả tiếng hát.\n- Đánh trống lấp.\n\n* lắp\n1. Làm cho từng bộ phận rời được đặt đúng vị trí của nó để tất cả các bộ phận hợp lại tạo nên vật hoàn chỉnh, có công dụng.\n- Lắp máy.\n- Lắp xe đạp.\n- Lắp cửa vào khung.\n- Lắp đạn (để có thể bắn).\n2. (Thường dùng trước lại) . Như lặp.\n- Bài văn có nhiều ý lắp lại.\n- Lắp đi lắp lại mãi một giọng điệu."
+    },
+    {
+        "question": "Chọn câu đúng",
+        "choice1": "thẫm mĩ",
+        "choice2": "thẩm mĩ",
+        "answer": "thẩm mĩ",
+        "explanation": "* thẫm\n1. Như sẫm.\n- Đỏ thẫm.\n- Áo thẫm màu.\n\n* thẩm\n1. Xét kỹ những việc thuộc về tòa án.\n- Thẩm lại vụ án.\n2. Như thấm\n- Thẩm cho ráo mực."
+    },
+    {
+        "question": "Chọn câu đúng",
+        "choice1": "thẩm vấn",
+        "choice2": "thẫm vấn",
+        "answer": "thẩm vấn",
+        "explanation": "* thẫm\n1. Như sẫm.\n- Đỏ thẫm.\n- Áo thẫm màu.\n\n* thẩm\n1. Xét kỹ những việc thuộc về tòa án.\n- Thẩm lại vụ án.\n2. Như thấm\n- Thẩm cho ráo mực."
+    }
+]

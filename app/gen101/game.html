@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CÂU HỎI ÔN TẬP</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="loader"></div>
+      <div id="game" class="justify-center flex-column hidden">
+        <div id="hud">
+          <div id="hud-item">
+            <p id="progressText" class="hud-prefix">
+              Câu
+            </p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix">
+              Điểm
+            </p>
+            <h1 class="hud-main-text" id="score">
+              0
+            </h1>
+          </div>
+        </div>
+        <div id="question"></div>
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text" data-number="1"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text" data-number="2"></p>
+        </div>
+        <div id="explanation-popup"></div>
+        <div id="explanation-content">
+          <button id="showExplanationBtn" onclick="showExplanation()">Xem bài giảng giải thích</button>
+          <div id="content-text" >
+              <p id="explanation-text"></p>
+          </div>
+          <div id="button-container">
+              <button id="next-button" onclick="closePopup()">Tiếp tục</button>
+          </div>
+        </div>
+      
+      </div>
+      
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

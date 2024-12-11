@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #download-json {
+            background-color: #007bff;
+        }
+        #download-json:hover {
+            background-color: #0056b3;
+        }
+        #copy-json {
+            background-color: #ffc107;
+        }
+        #copy-json:hover {
+            background-color: #e0a800;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate JSON Data</h1>
+    <form id="data-form">
+        <label for="choice1">Choice 1:</label>
+        <input type="text" id="choice1" placeholder="Nhập câu lựa chọn 1" required>
+        
+        <label for="choice2">Choice 2:</label>
+        <input type="text" id="choice2" placeholder="Nhập câu lựa chọn 2" required>
+
+        <label for="answer">Answer:</label>
+        <select id="answer" required>
+            <option value="choice1">Choice 1</option>
+            <option value="choice2">Choice 2</option>
+        </select>
+
+        <label for="explanation">Explanation:</label>
+        <textarea id="explanation" placeholder="Nhập giải thích" rows="4"></textarea>
+        
+        <button type="button" id="add-entry">Add to List</button>
+        <button type="button" id="download-json">Download JSON</button>
+        <button type="button" id="copy-json">Copy JSON</button>
+    </form>
+
+    <h2>JSON Data:</h2>
+    <pre id="json-output">[]</pre>
+
+    <script>
+        const data = []; // Lưu trữ dữ liệu nhập
+        const choice1Input = document.getElementById('choice1');
+        const choice2Input = document.getElementById('choice2');
+        const answerSelect = document.getElementById('answer');
+        const explanationInput = document.getElementById('explanation');
+        const jsonOutput = document.getElementById('json-output');
+
+        // Thêm dữ liệu vào danh sách
+        document.getElementById('add-entry').addEventListener('click', () => {
+            const choice1 = choice1Input.value.trim();
+            const choice2 = choice2Input.value.trim();
+            const answer = answerSelect.value === 'choice1' ? choice1 : choice2;
+            const explanation = explanationInput.value.trim();
+
+            if (choice1 && choice2 && explanation) {
+                // Thêm dữ liệu vào mảng
+                data.push({
+                    question: "Chọn câu đúng",
+                    choice1,
+                    choice2,
+                    answer,
+                    explanation
+                });
+
+                // Cập nhật hiển thị JSON
+                jsonOutput.textContent = JSON.stringify(data, null, 4);
+
+                // Xóa các ô nhập sau khi thêm
+                choice1Input.value = '';
+                choice2Input.value = '';
+                explanationInput.value = '';
+                answerSelect.value = 'choice1';
+            } else {
+                alert('Please fill out all fields!');
+            }
+        });
+
+        // Tải xuống JSON
+        document.getElementById('download-json').addEventListener('click', () => {
+            const jsonBlob = new Blob([JSON.stringify(data, null, 4)], { type: 'application/json' });
+            const url = URL.createObjectURL(jsonBlob);
+            const link = document.createElement('a');
+
+            link.href = url;
+            link.download = 'data.json';
+            link.click();
+
+            URL.revokeObjectURL(url);
+        });
+
+        // Sao chép JSON vào clipboard
+        document.getElementById('copy-json').addEventListener('click', () => {
+            const jsonText = JSON.stringify(data, null, 4);
+            navigator.clipboard.writeText(jsonText)
+                .then(() => {
+                    alert('JSON has been copied to clipboard!');
+                })
+                .catch(err => {
+                    console.error('Copy failed:', err);
+                    alert('Unable to copy JSON!');
+                });
+        });
+    </script>
+</body>
+</html>
