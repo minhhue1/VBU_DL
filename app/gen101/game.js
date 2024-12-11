@@ -205,7 +205,7 @@ function getNewQuestion() {
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     
-    if (currentLesson === 'test') {
+    if (currentLesson === 'frequencyDictionary') {
         // Lấy câu hỏi trộn
         const questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];
