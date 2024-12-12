@@ -72,10 +72,18 @@
         <label for="choice2">Choice 2:</label>
         <input type="text" id="choice2" placeholder="Nhập câu lựa chọn 2" required>
 
+        <label for="choice1">Choice 3:</label>
+        <input type="text" id="choice3" placeholder="Nhập câu lựa chọn 3">
+        
+        <label for="choice2">Choice 4:</label>
+        <input type="text" id="choice4" placeholder="Nhập câu lựa chọn 4">
+
         <label for="answer">Answer:</label>
         <select id="answer" required>
             <option value="choice1">Choice 1</option>
             <option value="choice2">Choice 2</option>
+            <option value="choice3">Choice 3</option>
+            <option value="choice4">Choice 4</option>
         </select>
 
         <label for="explanation">Explanation:</label>
@@ -94,65 +102,77 @@
         const questionI = document.getElementById('question');
         const choice1Input = document.getElementById('choice1');
         const choice2Input = document.getElementById('choice2');
+        const choice3Input = document.getElementById('choice3');
+        const choice4Input = document.getElementById('choice4');
         const answerSelect = document.getElementById('answer');
         const explanationInput = document.getElementById('explanation');
         const jsonOutput = document.getElementById('json-output');
-
+    
         // Thêm dữ liệu vào danh sách
         document.getElementById('add-entry').addEventListener('click', () => {
             const question = questionI.value.trim();
+            const choices = [];
+            
+            // Lấy các lựa chọn không rỗng
             const choice1 = choice1Input.value.trim();
             const choice2 = choice2Input.value.trim();
-            const answer = answerSelect.value === 'choice1' ? choice1 : choice2;
+            const choice3 = choice3Input.value.trim();
+            const choice4 = choice4Input.value.trim();
+    
+            if (choice1) choices.push({ key: 'choice1', value: choice1 });
+            if (choice2) choices.push({ key: 'choice2', value: choice2 });
+            if (choice3) choices.push({ key: 'choice3', value: choice3 });
+            if (choice4) choices.push({ key: 'choice4', value: choice4 });
+    
+            // Xác định câu trả lời dựa trên key đã chọn
+            const answer = choices.find(choice => choice.key === answerSelect.value)?.value || '';
+    
             const explanation = explanationInput.value.trim();
-
-            if (choice1 && choice2) {
+    
+            if (choices.length >= 2) {
                 // Thêm dữ liệu vào mảng
-                if (question === "") {
-                    data.push({
-                        question: "Chọn câu đúng",
-                        choice1,
-                        choice2,
-                        answer,
-                        explanation
-                    });
-                } else {
-                    data.push({
-                        question,
-                        choice1,
-                        choice2,
-                        answer,
-                        explanation
-                    });
-                }
-
+                const questionData = {
+                    question: question || "Chọn câu đúng",
+                    explanation,
+                    answer,
+                };
+    
+                // Thêm các lựa chọn không rỗng vào JSON
+                choices.forEach((choice, index) => {
+                    questionData[`choice${index + 1}`] = choice.value;
+                });
+    
+                data.push(questionData);
+    
                 // Cập nhật hiển thị JSON
                 jsonOutput.textContent = JSON.stringify(data, null, 4);
-
+    
                 // Xóa các ô nhập sau khi thêm
                 questionI.value = '';
                 choice1Input.value = '';
                 choice2Input.value = '';
+                choice3Input.value = '';
+                choice4Input.value = '';
                 explanationInput.value = '';
                 answerSelect.value = 'choice1';
             } else {
-                alert('Please fill out all fields!');
+                alert('Please fill at least two choices!');
             }
         });
-
+    
         // Tải xuống JSON
         document.getElementById('download-json').addEventListener('click', () => {
             const jsonBlob = new Blob([JSON.stringify(data, null, 4)], { type: 'application/json' });
             const url = URL.createObjectURL(jsonBlob);
             const link = document.createElement('a');
-
+    
             link.href = url;
             link.download = 'data.json';
             link.click();
-
+    
             URL.revokeObjectURL(url);
         });
-
+    
         // Sao chép JSON vào clipboard
         document.getElementById('copy-json').addEventListener('click', () => {
             const jsonText = JSON.stringify(data, null, 4);

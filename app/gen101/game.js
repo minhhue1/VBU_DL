@@ -220,13 +220,24 @@ function getNewQuestion() {
 
     question.innerText = currentQuestion.question;
 
-    let numbers = [1, 2];
+    let numbers = [1, 2, 3, 4];
     // shuffle(numbers);  // Trộn thứ tự câu trả lời
 
     choices.forEach((choice, index) => {
         const number = numbers[index];
-        choice.innerText = currentQuestion['choice' + number];
+        const choiceKey = 'choice' + number;
+    
+        if (currentQuestion[choiceKey]) {
+            // Nếu lựa chọn tồn tại, hiển thị và cập nhật nội dung
+            choice.innerText = currentQuestion[choiceKey];
+            choice.parentElement.style.display = 'flex'; // Hiển thị container
+        } else {
+            // Nếu lựa chọn không tồn tại, ẩn container
+            choice.parentElement.style.display = 'none';
+        }
     });
+    
+    
 
     acceptingAnswers = true;
 }
