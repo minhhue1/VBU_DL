@@ -31,16 +31,38 @@ if (!currentLesson) {
 
 let MAX_QUESTIONS;
 
+// async function loadQuestions() {
+//     if (currentLesson === 'test') {
+//         await loadQuestionsByLesson(currentRegion);  // Tải câu hỏi từ tất cả các bài học
+//     } else if (currentLesson === 'frequencyDictionary') {
+//         await loadQuestionsFromFile();
+//     } else {
+//         await loadQuestionsFromFile(currentRegion, currentLesson);  // Tải câu hỏi từ bài học cụ thể
+//     }
+//     startGame();  // Bắt đầu trò chơi khi đã tải xong câu hỏi
+// }
+
 async function loadQuestions() {
-    if (currentLesson === 'test') {
-        await loadQuestionsByLesson(currentRegion);  // Tải câu hỏi từ tất cả các bài học
+    const retryMode = getParameterByName('retry'); // Lấy giá trị của tham số `retry`
+    if (retryMode === 'incorrect') {
+        const incorrectQuestions = JSON.parse(localStorage.getItem('incorrectQuestions'));
+        questions = incorrectQuestions || [];
+        MAX_QUESTIONS = questions.length;
+    } else if (currentLesson === 'test') {
+        await loadQuestionsByLesson(currentRegion); // Tải câu hỏi từ tất cả các bài học
     } else if (currentLesson === 'frequencyDictionary') {
         await loadQuestionsFromFile();
     } else {
-        await loadQuestionsFromFile(currentRegion, currentLesson);  // Tải câu hỏi từ bài học cụ thể
+        await loadQuestionsFromFile(currentRegion, currentLesson); // Tải câu hỏi từ bài học cụ thể
     }
-    startGame();  // Bắt đầu trò chơi khi đã tải xong câu hỏi
+    if (retryMode === 'incorrect' && questions.length === 0) {
+        alert('Không có câu sai để làm lại!');
+        window.location.assign('gen101.html'); // Quay về trang chính
+        return;
+    }
+    startGame(); // Bắt đầu trò chơi khi đã tải xong câu hỏi
 }
+
 
 // Hàm trộn mảng
 function shuffle(array) {
@@ -221,7 +243,7 @@ function getNewQuestion() {
     question.innerText = currentQuestion.question;
 
     let numbers = [1, 2, 3, 4];
-    // shuffle(numbers);  // Trộn thứ tự câu trả lời
+    shuffle(numbers);  // Trộn thứ tự câu trả lời
 
     choices.forEach((choice, index) => {
         const number = numbers[index];
@@ -331,6 +353,11 @@ choices.forEach((choice) => {
             question: currentQuestion.question,
             selectedAnswer: selectedAnswer,
             correctAnswer: currentQuestion.answer,
+            explanation: currentQuestion.explanation,
+            choice1: currentQuestion.choice1 || "",        // Mặc định chuỗi rỗng nếu thiếu lựa chọn
+            choice2: currentQuestion.choice2 || "",
+            choice3: currentQuestion.choice3 || "",
+            choice4: currentQuestion.choice4 || ""
         });
 
         if (globalClassToApply === 'correct') {

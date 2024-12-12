@@ -4,22 +4,6 @@ const currentLesson = localStorage.getItem('currentLesson');
 const currentRegion = localStorage.getItem('currentRegion');
 const max_questions = localStorage.getItem('max_questions');
 
-if (currentRegion) {
-    const head = document.querySelector('head');
-    
-    // Tạo và thêm thẻ link cho app.css
-    const appStylesheet = document.createElement('link');
-    appStylesheet.rel = 'stylesheet';
-    appStylesheet.href = `region/${currentRegion}/app.css`;
-    head.appendChild(appStylesheet);
-
-    // Tạo và thêm thẻ link cho game.css
-    const endStylesheet = document.createElement('link');
-    endStylesheet.rel = 'stylesheet';
-    endStylesheet.href = `region/${currentRegion}/end.css`;
-    head.appendChild(endStylesheet);
-}
-
 // Hiển thị điểm số cuối cùng
 finalScore.innerText = mostRecentScore + "/" + max_questions;
 
@@ -56,13 +40,43 @@ userAnswers.forEach((answer) => {
     }
 });
 
-// Cập nhật link "Làm lại" với lesson hiện tại
-const retryBtn = document.querySelector('a[href="game.html"]');
-if (currentLesson === 'frequencyDictionary') {
-    retryBtn.href = `game.html?lesson=frequencyDictionary`;
-} else {
-    retryBtn.href = `game.html?region=${currentRegion}&lesson=${currentLesson}`;
+// // Cập nhật link "Làm lại" với lesson hiện tại
+// const retryBtn = document.querySelector('a[href="game.html"]');
+// if (currentLesson === 'frequencyDictionary') {
+//     retryBtn.href = `game.html?lesson=frequencyDictionary`;
+// } else {
+//     retryBtn.href = `game.html?region=${currentRegion}&lesson=${currentLesson}`;
+// }
+
+// Lưu danh sách câu sai vào localStorage
+const incorrectQuestions = [];
+userAnswers.forEach((answer) => {
+    if (answer.selectedAnswer !== answer.correctAnswer) {
+        incorrectQuestions.push({
+            question: answer.question,
+            answer: answer.correctAnswer,
+            explanation: answer.explanation,
+            choice1: answer.choice1,
+            choice2: answer.choice2,
+            choice3: answer.choice3,
+            choice4: answer.choice4,
+        });
+    }
+});
+localStorage.setItem('incorrectQuestions', JSON.stringify(incorrectQuestions));
+
+
+if (incorrectQuestions.length === 0) {
+    const message = document.createElement('p');
+    message.innerText = 'Bạn đã trả lời đúng tất cả các câu hỏi!';
+    incorrectAnswersContainer.appendChild(message);
 }
+
+
+// Cập nhật link "Làm lại" với danh sách câu sai
+const retryBtn = document.querySelector('a[href="game.html"]');
+retryBtn.href = `game.html?retry=incorrect`;
+
 
 // Cập nhật link "Trang chủ" với region hiện tại
 const homeBtn = document.querySelector('a[href="gen101.html"]');
