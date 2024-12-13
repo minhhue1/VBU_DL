@@ -36,14 +36,14 @@
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "nỗ lực - năng nổ",
         "answer": "nỗ lực",
         "choice1": "nỗ lực",
         "choice2": "nổ lực"
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "nỗ lực - năng nổ",
         "answer": "năng nổ",
         "choice1": "năng nỗ",
         "choice2": "năng nổ"
@@ -65,8 +65,8 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
-        "answer": "sắc xảo",
-        "choice1": "sắc xảo",
+        "answer": "sắc sảo",
+        "choice1": "sắc sảo",
         "choice2": "sắc xảo"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "chia sẻ",
         "answer": "san sẻ",
         "choice1": "san sẻ",
         "choice2": "san sẽ"
@@ -128,13 +128,13 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
-        "answer": "trải nghiễm",
-        "choice1": "trải nghiễm",
+        "answer": "trải nghiệm",
+        "choice1": "trải nghiệm",
         "choice2": "trãi nghiệm"
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "trao: đưa, giao phó\n\ntrau: Làm cho thêm óng ả, đẹp đẽ.",
         "answer": "trau chuốt",
         "choice1": "trau chuốt",
         "choice2": "trao chuốt"
@@ -177,13 +177,6 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
-        "answer": "xán lạn",
-        "choice1": "xán lạn",
-        "choice2": "xáng lạng"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
         "answer": "xúi giục",
         "choice1": "xúi giục",
         "choice2": "xúi dục"
@@ -191,7 +184,7 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
-        "answer": "chín mùi",
+        "answer": "chín muồi",
         "choice1": "chín mùi",
         "choice2": "chín muồi"
     },
@@ -212,9 +205,9 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
-        "answer": "chẳng lẻ",
+        "answer": "chẳng lẽ",
         "choice1": "chẵng lẻ",
-        "choice2": "chẳng lẻ"
+        "choice2": "chẳng lẽ"
     },
     {
         "question": "Chọn câu đúng",
@@ -232,8 +225,8 @@
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
-        "answer": "cặp bến",
+        "explanation": "cặp: cặp đôi, cặp (balo), cặp tóc, cặp mạ\n\ncập: cập bến, cập nhật, cập kê",
+        "answer": "cập bến",
         "choice1": "cặp bến",
         "choice2": "cập bến"
     },
@@ -254,20 +247,6 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
-        "answer": "run sợ",
-        "choice1": "run sợ",
-        "choice2": "rung sợ"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
-        "answer": "run rẩy",
-        "choice1": "run rẩy",
-        "choice2": "rung rẩy"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
         "answer": "sảng khoái",
         "choice1": "sảng khoái",
         "choice2": "sản khoái"
@@ -281,14 +260,14 @@
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "vun: Gom vật rời cao lên cho gọn\n\nvung: 1. Nắp để đậy đồ đun nấu hoặc đồ chứa đựng.\n2. Giơ lên cao và đưa đi đưa lại thật nhanh.\n3. Cầm thứ gì ở tay, đưa lên cao rồi ném xuống.\n4. Tiêu dùng phung phí.",
         "answer": "vun trồng",
         "choice1": "vung trồng",
         "choice2": "vun trồng"
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "vụn: mảnh vụn",
         "answer": "vụng về",
         "choice1": "vụn về",
         "choice2": "vụng về"
@@ -309,7 +288,7 @@
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "hoang: chỗ hoang",
         "answer": "hoan hỉ",
         "choice1": "hoang hỉ",
         "choice2": "hoan hỉ"
@@ -330,35 +309,35 @@
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "phảng: phảng phất - phản: phản công, phản ánh, phản chiếu",
         "answer": "phảng phất",
         "choice1": "phản phất",
         "choice2": "phảng phất"
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "không có từ biệc",
         "answer": "biền biệt",
         "choice1": "biền biệc",
         "choice2": "biền biệt"
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "buột: Tự nhiên rời ra\n\nbuộc: buột tóc, buộc lòng, buộc phải, bị buộc",
         "answer": "buột miệng",
         "choice1": "buột miệng",
         "choice2": "buộc miệng"
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "phác: chất phác, phác khảo\n\nphát: phát minh, phát huy, phát súng, phát đạt, phát hỏa",
         "answer": "chất phác",
         "choice1": "chất phát",
         "choice2": "chất phác"
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "",
+        "explanation": "húc: húc nhau",
         "answer": "heo hút",
         "choice1": "heo hút",
         "choice2": "heo húc"
@@ -404,13 +383,6 @@
         "answer": "phó mặc",
         "choice1": "phó mặt",
         "choice2": "phó mặc"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
-        "answer": "phút chốc",
-        "choice1": "phút chốc",
-        "choice2": "phúc chốc"
     },
     {
         "question": "Chọn câu đúng",
@@ -520,13 +492,6 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
-        "answer": "trau chuốt",
-        "choice1": "trao chuốt",
-        "choice2": "trau chuốt"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
         "answer": "trau dồi",
         "choice1": "trao dồi",
         "choice2": "trau dồi"
@@ -541,28 +506,28 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "+ [ưi] chỉ có vài từ như: chửi, gửi, ngửi, khung cửi;\n+ còn lại là vần [ươi]",
-        "answer": "cữi cổ",
+        "answer": "cưỡi cổ",
         "choice1": "cữi cổ",
         "choice2": "cưỡi cổ"
     },
     {
         "question": "Chọn câu đúng",
         "explanation": "+ [ưi] chỉ có vài từ như: chửi, gửi, ngửi, khung cửi;\n+ còn lại là vần [ươi]",
-        "answer": "tức tửi",
+        "answer": "tức tưởi",
         "choice1": "tức tửi",
         "choice2": "tức tưởi"
     },
     {
         "question": "Chọn câu đúng",
         "explanation": "+ [ưi] chỉ có vài từ như: chửi, gửi, ngửi, khung cửi;\n+ còn lại là vần [ươi]",
-        "answer": "rác rửi",
+        "answer": "rác rưởi",
         "choice1": "rác rửi",
         "choice2": "rác rưởi"
     },
     {
         "question": "Chọn câu đúng",
         "explanation": "+ [ưi] chỉ có vài từ như: chửi, gửi, ngửi, khung cửi;\n+ còn lại là vần [ươi]",
-        "answer": "sửi ấm",
+        "answer": "sưởi ấm",
         "choice1": "sửi ấm",
         "choice2": "sưởi ấm"
     },
@@ -754,7 +719,7 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
-        "answer": "lắt chắt",
+        "answer": "loắt choắt",
         "choice1": "lắt chắt",
         "choice2": "loắt choắt"
     },
@@ -789,7 +754,7 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "Tái lập:\n1. lập lại, xây dựng lại (sau một thời gian bị ngưng hoặc đình trệ)\n- hai nước tái lập quan hệ ngoại giao\n- tái lập nền hoà bình",
-        "answer": "tái lặp",
+        "answer": "tái lập",
         "choice1": "tái lập",
         "choice2": "tái lặp"
     },
@@ -932,41 +897,6 @@
         "answer": "điêu đứng",
         "choice1": "đêu đứng",
         "choice2": "điêu đứng"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
-        "answer": "đểu cáng",
-        "choice1": "đểu cáng",
-        "choice2": "điểu cáng"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
-        "answer": "kìm kẹp",
-        "choice1": "kìm kẹp",
-        "choice2": "kiềm kẹp"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
-        "answer": "hiu quạnh",
-        "choice1": "hiu quạnh",
-        "choice2": "hiêu quạnh"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
-        "answer": "nâng niu",
-        "choice1": "nâng niu",
-        "choice2": "nâng niêu"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
-        "answer": "thất thểu",
-        "choice1": "thất thểu",
-        "choice2": "thất thiểu"
     },
     {
         "question": "Chọn câu đúng",

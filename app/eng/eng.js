@@ -373,6 +373,13 @@ function closePopup() {
 //     });
 // });
 
+// Hàm loại bỏ dấu câu và chuẩn hóa dấu nháy
+function removePunctuation(text) {
+    // Thay thế tất cả dấu nháy cong ’ thành dấu nháy thẳng '
+    text = text.replace(/’/g, "'");  
+    return text.replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()"…]/g, "").trim();
+}
+
 function checkAnswer() {
     const userAnswer = document.getElementById('answer').value.trim().toLowerCase();
 
@@ -388,7 +395,7 @@ function checkAnswer() {
     });
 
     // Kiểm tra đáp án
-    const isCorrect = correctAnswers.some(answer => userAnswer === answer.toLowerCase());
+    const isCorrect = correctAnswers.some(answer => removePunctuation(userAnswer) === removePunctuation(answer.toLowerCase()));
 
     if (isCorrect) {
         incrementScore(CORRECT_BONUS);
