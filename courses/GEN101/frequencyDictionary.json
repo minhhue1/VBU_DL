@@ -30,9 +30,9 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
-        "answer": "nên tảng",
+        "answer": "nền tảng",
         "choice1": "nền tản",
-        "choice2": "nên tảng"
+        "choice2": "nền tảng"
     },
     {
         "question": "Chọn câu đúng",
@@ -323,7 +323,7 @@
     },
     {
         "question": "Chọn câu đúng",
-        "explanation": "buột: Tự nhiên rời ra\n\nbuộc: buột tóc, buộc lòng, buộc phải, bị buộc",
+        "explanation": "buột: Tự nhiên rời ra\n\nbuộc: buộc tóc, buộc lòng, buộc phải, bị buộc",
         "answer": "buột miệng",
         "choice1": "buột miệng",
         "choice2": "buộc miệng"
@@ -488,13 +488,6 @@
         "answer": "mếu máo",
         "choice1": "mếu máu",
         "choice2": "mếu máo"
-    },
-    {
-        "question": "Chọn câu đúng",
-        "explanation": "",
-        "answer": "trau dồi",
-        "choice1": "trao dồi",
-        "choice2": "trau dồi"
     },
     {
         "question": "Chọn câu đúng",
