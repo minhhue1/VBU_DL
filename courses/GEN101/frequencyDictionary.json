@@ -2,6 +2,55 @@
     {
         "question": "Chọn câu đúng",
         "explanation": "",
+        "answer": "lêu lổng",
+        "choice1": "lêu lổng",
+        "choice2": "lêu lỗng"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "explanation": "",
+        "answer": "cổng trời",
+        "choice1": "cổng trời",
+        "choice2": "cỗng trời"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "explanation": "",
+        "answer": "con ngỗng",
+        "choice1": "con ngỗng",
+        "choice2": "con ngổng"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "explanation": "",
+        "answer": "học bổng",
+        "choice1": "học bổng",
+        "choice2": "học bỗng"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "explanation": "",
+        "answer": "báo cáo",
+        "choice1": "báo cáo",
+        "choice2": "báu cáu"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "explanation": "",
+        "answer": "lao xao",
+        "choice1": "lao xao",
+        "choice2": "lao sao"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "explanation": "",
+        "answer": "hoa mào gà",
+        "choice1": "hoa mào gà",
+        "choice2": "hoa màu gà"
+    },
+    {
+        "question": "Chọn câu đúng",
+        "explanation": "",
         "answer": "nhậm chức",
         "choice1": "nhậm chức",
         "choice2": "nhận chức"
