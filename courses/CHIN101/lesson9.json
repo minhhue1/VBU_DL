@@ -112,17 +112,17 @@
     {
         "question": "乃",
         "answer": "nãi",
-        "explanation": "乃 nãi: là"
+        "explanation": "乃 nãi: là (thất bại nãi thành công chi mẫu)"
     },
     {
         "question": "没",
         "answer": "một",
-        "explanation": "没 một: 没/沒 một: chìm, chết"
+        "explanation": "没/沒 một: chìm, chết"
     },
     {
         "question": "沒",
         "answer": "một",
-        "explanation": "沒 một: 没/沒 một: chìm, chết"
+        "explanation": "没/沒 một: chìm, chết"
     },
     {
         "question": "九",
@@ -186,13 +186,8 @@
     },
     {
         "question": "马",
-        "answer": "ngựa",
+        "answer": "mã",
         "explanation": "马 ngựa: 馬/马 mã: ngựa"
-    },
-    {
-        "question": "母",
-        "answer": "mẫu",
-        "explanation": "母 mẫu: mẹ"
     },
     {
         "question": "每",
