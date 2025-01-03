@@ -53,7 +53,11 @@ async function loadQuestions() {
     } else if (currentLesson === 'test') {
         await loadQuestionsByLesson(currentRegion); // Tải câu hỏi từ tất cả các bài học
     } else if (currentLesson === 'single' || currentLesson === 'vocal') {
-        NUM_LESSONS = 6; // Gán số bài học cần tải
+        let index = `${currentCourse}`;
+        index = index.toLowerCase();
+        if (index === 'chin101'){
+            NUM_LESSONS = 10; // Gán số bài học cần tải
+        }
         await loadQuestionAll(currentCourse);
     } else {
         await loadQuestionsFromFile(currentCourse, currentLesson); // Tải câu hỏi từ bài học cụ thể
