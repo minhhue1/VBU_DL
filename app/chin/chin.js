@@ -33,13 +33,23 @@ if (!currentLesson) {
 let MAX_QUESTIONS;
 
 async function loadQuestions() {
-    if (currentLesson === 'test') {
+    const retryMode = getParameterByName('retry'); // Lấy giá trị của tham số `retry`
+    if (retryMode === 'incorrect') {
+        const incorrectQuestions = JSON.parse(localStorage.getItem('incorrectQuestions'));
+        questions = incorrectQuestions || [];
+        MAX_QUESTIONS = questions.length;
+    } else if (currentLesson === 'test') {
         await loadQuestionsByLesson(currentRegion); // Tải câu hỏi từ tất cả các bài học
     } else if (currentLesson === 'single' || currentLesson === 'vocal') {
         NUM_LESSONS = 6; // Gán số bài học cần tải
         await loadQuestionAll(currentCourse);
     } else {
         await loadQuestionsFromFile(currentCourse, currentLesson); // Tải câu hỏi từ bài học cụ thể
+    }
+    if (retryMode === 'incorrect' && questions.length === 0) {
+        alert('Không có câu sai để làm lại!');
+        window.location.assign('chin101.html'); // Quay về trang chính
+        return;
     }
     startGame(); // Bắt đầu trò chơi khi đã tải xong câu hỏi
 }

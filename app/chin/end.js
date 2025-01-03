@@ -41,9 +41,30 @@ userAnswers.forEach((answer) => {
     }
 });
 
-// Cập nhật link "Làm lại" với lesson hiện tại
+// Lưu danh sách câu sai vào localStorage
+const incorrectQuestions = [];
+userAnswers.forEach((answer) => {
+    if (answer.selectedAnswer !== answer.correctAnswer) {
+        incorrectQuestions.push({
+            question: answer.question,
+            answer: answer.correctAnswer,
+            explanation: answer.explanation,
+        });
+    }
+});
+localStorage.setItem('incorrectQuestions', JSON.stringify(incorrectQuestions));
+
+
+if (incorrectQuestions.length === 0) {
+    const message = document.createElement('p');
+    message.innerText = 'Bạn đã trả lời đúng tất cả các câu hỏi!';
+    incorrectAnswersContainer.appendChild(message);
+}
+
+
+// Cập nhật link "Làm lại" với danh sách câu sai
 const retryBtn = document.querySelector('a[href="chin.html"]');
-retryBtn.href = `chin.html?course=${currentCourse}&lesson=${currentLesson}`;
+retryBtn.href = `chin.html?retry=incorrect`;
 
 let index = `${currentCourse}`;
 index = index.toLowerCase();
