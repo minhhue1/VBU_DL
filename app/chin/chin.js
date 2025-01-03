@@ -23,17 +23,29 @@ function getParameterByName(name) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
 }
+let currentLesson;
+let currentCourse;
+const retryMode = getParameterByName('retry'); // Lấy giá trị của tham số `retry`
 
-let currentLesson = getParameterByName('lesson');
-let currentCourse = getParameterByName('course');
-if (!currentLesson) {
-    currentLesson = 1;  // Nếu không có bài học nào, mặc định là bài học 1
+if (retryMode !== 'incorrect') {
+    currentLesson = getParameterByName('lesson');
+    currentCourse = getParameterByName('course');
+    if (!currentLesson) {
+        currentLesson = 1;  // Nếu không có bài học nào, mặc định là bài học 1
+    }
+} else {
+    currentCourse = localStorage.getItem('currentCourse');
 }
+
+// let currentLesson = getParameterByName('lesson');
+// let currentCourse = getParameterByName('course');
+// if (!currentLesson) {
+//     currentLesson = 1;  // Nếu không có bài học nào, mặc định là bài học 1
+// }
 
 let MAX_QUESTIONS;
 
 async function loadQuestions() {
-    const retryMode = getParameterByName('retry'); // Lấy giá trị của tham số `retry`
     if (retryMode === 'incorrect') {
         const incorrectQuestions = JSON.parse(localStorage.getItem('incorrectQuestions'));
         questions = incorrectQuestions || [];
@@ -48,7 +60,9 @@ async function loadQuestions() {
     }
     if (retryMode === 'incorrect' && questions.length === 0) {
         alert('Không có câu sai để làm lại!');
-        window.location.assign('chin101.html'); // Quay về trang chính
+        let index = `${currentCourse}`;
+        index = index.toLowerCase();
+        window.location.assign(`${index}.html`); // Quay về trang chính
         return;
     }
     startGame(); // Bắt đầu trò chơi khi đã tải xong câu hỏi
@@ -390,6 +404,7 @@ function checkAnswer() {
         question: currentQuestion.question,
         selectedAnswer: userAnswer,
         correctAnswer: currentQuestion.answer,
+        explanation: currentQuestion.explanation,
     });
 
     if (userAnswer.trim().toLowerCase() === currentQuestion.answer.toLowerCase()) {

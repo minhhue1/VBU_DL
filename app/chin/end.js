@@ -44,7 +44,7 @@ userAnswers.forEach((answer) => {
 // Lưu danh sách câu sai vào localStorage
 const incorrectQuestions = [];
 userAnswers.forEach((answer) => {
-    if (answer.selectedAnswer !== answer.correctAnswer) {
+    if (answer.selectedAnswer.trim().toLowerCase() !== answer.correctAnswer.toLowerCase()) {
         incorrectQuestions.push({
             question: answer.question,
             answer: answer.correctAnswer,
