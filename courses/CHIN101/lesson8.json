@@ -1,0 +1,187 @@
+[
+    {
+        "question": "小",
+        "answer": "tiểu",
+        "explanation": "小 tiểu: nhỏ"
+    },
+    {
+        "question": "人小",
+        "answer": "nhân tiểu",
+        "explanation": "人小 nhân tiểu: Người nhỏ"
+    },
+    {
+        "question": "小人",
+        "answer": "tiểu nhân",
+        "explanation": "小人 tiểu nhân: Người nhỏ, (thời xưa chỉ người có địa vị thấp kém, sau này chỉ kẻ lòng dạ nhỏ mọn thấp kém"
+    },
+    {
+        "question": "字",
+        "answer": "tự",
+        "explanation": "字 tự: văn tự, chữ"
+    },
+    {
+        "question": "汉字",
+        "answer": "Hán tự",
+        "explanation": "汉字 Hán tự"
+    },
+    {
+        "question": "大字",
+        "answer": "đại tự",
+        "explanation": "大字 đại tự: Chữ lớn"
+    },
+    {
+        "question": "小字",
+        "answer": "tiểu tự",
+        "explanation": "小字 tiểu tự: chữ nhỏ"
+    },
+    {
+        "question": "八字",
+        "answer": "bát tự",
+        "explanation": "八字 bát tự: Bát tự: bát tự; tám chữ (giờ ngày tháng năm sinh viết theo Thiên can và Địa chi) Là một cách xem số mệnh của Trung quốc. Người mê tín cho rằng giờ, ngày, tháng, năm con người được sinh ra đều bị Thiên can Địa chi chi phối. Mỗi giờ, ngày, tháng, năm sinh ấy được thay bằng hai chữ, tổng cộng là tám. Dựa vào tám chữ ấy, ta có thể suy đoán ra vận mệnh của một con người. Theo phong tục cũ, từ khi đính hôn, hai bên nhà trai và nhà gái phải trao đổi \"Bát tự thiếp\" cho nhau, còn gọi là \"canh thiếp\" hay \"bát tự\"."
+    },
+    {
+        "question": "一字",
+        "answer": "nhất tự",
+        "explanation": "一字 nhất tự"
+    },
+    {
+        "question": "一字為師",
+        "answer": "nhất tự vi sư",
+        "explanation": "一字為師 nhất tự vi sư"
+    },
+    {
+        "question": "半字為師",
+        "answer": "bán tự vi sư",
+        "explanation": "半字為師 bán tự vi sư"
+    },
+    {
+        "question": "一字千金",
+        "answer": "nhất tự thiên kim",
+        "explanation": "一字千金 nhất tự thiên kim"
+    },
+    {
+        "question": "戈",
+        "answer": "qua",
+        "explanation": "戈 qua: cái mác, một thứ vũ khí ngày xưa"
+    },
+    {
+        "question": "我",
+        "answer": "ngã",
+        "explanation": "我 ngã: ta, tôi"
+    },
+    {
+        "question": "人我",
+        "answer": "nhân ngã",
+        "explanation": "人我 nhân ngã"
+    },
+    {
+        "question": "大我",
+        "answer": "đại ngã",
+        "explanation": "大我 đại ngã"
+    },
+    {
+        "question": "小我",
+        "answer": "tiểu ngã",
+        "explanation": "小我 tiểu ngã"
+    },
+    {
+        "question": "狗",
+        "answer": "cẩu",
+        "explanation": "狗 cẩu: con chó"
+    },
+    {
+        "question": "犬馬之心",
+        "answer": "khuyển mã chi tâm",
+        "explanation": "犬馬之心 khuyển mã chi tâm"
+    },
+    {
+        "question": "狗馬之心",
+        "answer": "cẩu mã chi tâm",
+        "explanation": "狗馬之心 cẩu mã chi tâm"
+    },
+    {
+        "question": "家",
+        "answer": "gia",
+        "explanation": "家 gia: gia đình, nhà"
+    },
+    {
+        "question": "大家",
+        "answer": "đại gia",
+        "explanation": "大家 đại gia: Nhà quyền quý, đại gia; người nổi tiếng; mọi người"
+    },
+    {
+        "question": "家中",
+        "answer": "gia trung",
+        "explanation": "家中 gia trung: ở trong nhà"
+    },
+    {
+        "question": "入家",
+        "answer": "nhập gia",
+        "explanation": "入家 nhập gia"
+    },
+    {
+        "question": "八大家",
+        "answer": "bát đại gia",
+        "explanation": "八大家 bát đại gia: Bát đại gia : 1. Tám nhà văn học nổi tiếng nhất Trung Hoa gồm “Hàn Dũ” 韓愈, “Liễu Tông Nguyên” 柳宗元 (đời Đường), “Âu Dương Tu” 歐陽修, “Tô Tuân” 蘇洵, “Tô Thức” 蘇軾, “Tô Triệt” 蘇轍, “Vương An Thạch” 王安石 và “Tăng Củng” 曾鞏 (đời Tống)."
+    },
+    {
+        "question": "心",
+        "answer": "tâm",
+        "explanation": "心 tâm: trái tim; tâm, lòng, tâm tư"
+    },
+    {
+        "question": "一心",
+        "answer": "nhất tâm",
+        "explanation": "一心 nhất tâm: một lòng"
+    },
+    {
+        "question": "二心",
+        "answer": "nhị tâm",
+        "explanation": "二心 nhị tâm"
+    },
+    {
+        "question": "心地",
+        "answer": "tâm địa",
+        "explanation": "心地 tâm địa: tấm lòng; tâm địa; lòng dạ"
+    },
+    {
+        "question": "地心",
+        "answer": "địa tâm",
+        "explanation": "地心 địa tâm: tâm trái đất"
+    },
+    {
+        "question": "人心",
+        "answer": "nhân tâm",
+        "explanation": "人心 nhân tâm: Lòng người, thấu tình đạt lý"
+    },
+    {
+        "question": "入心",
+        "answer": "nhập tâm",
+        "explanation": "入心 nhập tâm: Ghi khắc vào lòng, không quên."
+    },
+    {
+        "question": "中心",
+        "answer": "trung tâm",
+        "explanation": "中心 trung tâm"
+    },
+    {
+        "question": "心中",
+        "answer": "tâm trung",
+        "explanation": "心中 tâm trung"
+    },
+    {
+        "question": "人我",
+        "answer": "nhân ngã",
+        "explanation": "人我 nhân ngã: Người và ta, tức Ngã chấp"
+    },
+    {
+        "question": "我心",
+        "answer": "ngã tâm",
+        "explanation": "我心 ngã tâm: Tâm ta"
+    },
+    {
+        "question": "也",
+        "answer": "dã",
+        "explanation": "也 dã: cũng"
+    }
+]
