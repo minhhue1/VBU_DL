@@ -1,0 +1,87 @@
+[
+    {
+        "question": "人",
+        "answer": "nhân",
+        "explanation": "人 nhân: Người (DT, 2 nét, bộ 人 nhân)"
+    },
+    {
+        "question": "入",
+        "answer": "nhập",
+        "explanation": "入 nhập: Vào (Đgt, 2 nét, bộ 入 nhập)\n# xuất 出 ra"
+    },
+    {
+        "question": "八",
+        "answer": "bát",
+        "explanation": "八 bát: tám, số đếm (ST, 2 nét, bộ bát 八)"
+    },
+    {
+        "question": "父",
+        "answer": "phụ",
+        "explanation": "父 phụ: cha (DT, 4 nét, bộ phụ 父)"
+    },
+    {
+        "question": "交",
+        "answer": "giao",
+        "explanation": "交 giao: Đưa, trao (Đgt, 6 nét, bộ 亠 đầu)"
+    },
+    {
+        "question": "天",
+        "answer": "thiên",
+        "explanation": "天 thiên: trời (DT, 4 nét, bộ đại 大)"
+    },
+    {
+        "question": "入門",
+        "answer": "nhập môn",
+        "explanation": "入門 nhập môn"
+    },
+    {
+        "question": "家父",
+        "answer": "gia phụ",
+        "explanation": "家父 gia phụ: gia phụ; phụ thân"
+    },
+    {
+        "question": "父母",
+        "answer": "phụ mẫu",
+        "explanation": "父母 phụ mẫu: cha mẹ; phụ mẫu; ba má; bố mẹ; bác mẹ"
+    },
+    {
+        "question": "父子",
+        "answer": "phụ tử",
+        "explanation": "父子 phụ tử: cha con"
+    },
+    {
+        "question": "天下",
+        "answer": "thiên hạ",
+        "explanation": "天下 thiên hạ: thiên hạ; thế giới"
+    },
+    {
+        "question": "天水",
+        "answer": "đại thuỷ",
+        "explanation": "天水 thiên thuỷ"
+    },
+    {
+        "question": "天地",
+        "answer": "thiên địa",
+        "explanation": "天地 thiên địa: trời đất; thiên địa; thế giới"
+    },
+    {
+        "question": "天才",
+        "answer": "thiên tài",
+        "explanation": "天才 thiên tài: thiên tài; tài năng; tài năng xuất chúng"
+    },
+    {
+        "question": "天子",
+        "answer": "thiên tử",
+        "explanation": "天子 thiên tử: thiên tử; vua; chân chúa"
+    },
+    {
+        "question": "天王",
+        "answer": "thiên vương",
+        "explanation": "天王 thiên vương"
+    },
+    {
+        "question": "十天干",
+        "answer": "thập thiên can",
+        "explanation": "十天干 thập thiên can"
+    }
+]

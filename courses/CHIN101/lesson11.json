@@ -1,0 +1,87 @@
+[
+    {
+        "question": "十",
+        "answer": "thập",
+        "explanation": "十 thập: mười, số đếm"
+    },
+    {
+        "question": "干",
+        "answer": "can",
+        "explanation": "干 can: Thiên can"
+    },
+    {
+        "question": "丰",
+        "answer": "phong",
+        "explanation": "丰 phong: (phồn thể 豐) phong phú, tươi tốt"
+    },
+    {
+        "question": "共",
+        "answer": "cộng",
+        "explanation": "共 cộng: chung, cộng lại"
+    },
+    {
+        "question": "土",
+        "answer": "thổ",
+        "explanation": "土 thổ: Đất"
+    },
+    {
+        "question": "士",
+        "answer": "sĩ",
+        "explanation": "士 sĩ: Học trò"
+    },
+    {
+        "question": "人士",
+        "answer": "nhân sĩ",
+        "explanation": "人士 nhân sĩ: chuyên gia; người có chuyên môn"
+    },
+    {
+        "question": "士夫",
+        "answer": "sĩ phu",
+        "explanation": "士夫 sĩ phu: sĩ phu; kẻ sĩ"
+    },
+    {
+        "question": "女士",
+        "answer": "nữ sĩ",
+        "explanation": "女士 nữ sĩ: quý bà; bà; phu nhân (thường dùng trong trường hợp ngoại giao)"
+    },
+    {
+        "question": "高士",
+        "answer": "cao sĩ",
+        "explanation": "高士 cao sĩ: ẩn sĩ; nhân sĩ; người tài giỏi; người xuất sắc; cao sĩ"
+    },
+    {
+        "question": "下士",
+        "answer": "hạ sĩ",
+        "explanation": "下士 hạ sĩ"
+    },
+    {
+        "question": "士人",
+        "answer": "sĩ nhân",
+        "explanation": "士人 sĩ nhân: kẻ sĩ; người có học; trí thức"
+    },
+    {
+        "question": "士女",
+        "answer": "sĩ nữ",
+        "explanation": "士女 sĩ nữ: trai gái; nam nữ (thời xưa chỉ trai, gái chưa lập gia đình)"
+    },
+    {
+        "question": "士子",
+        "answer": "sĩ tử",
+        "explanation": "士子 sĩ tử"
+    },
+    {
+        "question": "中士",
+        "answer": "trung sĩ",
+        "explanation": "中士 trung sĩ"
+    },
+    {
+        "question": "學士",
+        "answer": "học sĩ",
+        "explanation": "學士 học sĩ: (giản thể 学士)"
+    },
+    {
+        "question": "士大夫",
+        "answer": "sĩ đại phu",
+        "explanation": "士大夫 sĩ đại phu"
+    }
+]
