@@ -1,0 +1,92 @@
+[
+    {
+        "question": "左",
+        "answer": "tả",
+        "explanation": "左 tả: bên trái (DT, 5 nét, bộ công 工)"
+    },
+    {
+        "question": "右",
+        "answer": "hữu",
+        "explanation": "右 hữu: bên phải (DT, 5 nét, bộ khẩu 口)"
+    },
+    {
+        "question": "左右手,共十指\n左五指,右五指",
+        "answer": "Tả hữu thủ, cộng thập chỉ. Tả ngũ chỉ, hữu ngủ chỉ.",
+        "explanation": "左右手,共十指\n左五指,右五指\n Tả hữu thủ, cộng thập chỉ.\nTả ngũ chỉ, hữu ngủ chỉ.\n Tay trái, tay phải gồm mười ngón. Tay trái năm ngón, tay phải năm ngón."
+    },
+    {
+        "question": "不",
+        "answer": "bất",
+        "explanation": "不 bất: không (PT, 4 nét, bộ nhất 一)"
+    },
+    {
+        "question": "不仁",
+        "answer": "bất nhân",
+        "explanation": "不仁 bất nhân: Không có lòng thương người."
+    },
+    {
+        "question": "不全",
+        "answer": "bất toàn",
+        "explanation": "不全 bất toàn: Không trọn vẹn"
+    },
+    {
+        "question": "不才",
+        "answer": "bất tài",
+        "explanation": "不才 bất tài: bất tài; không có tài năng"
+    },
+    {
+        "question": "不二",
+        "answer": "bất nhị",
+        "explanation": "不二 bất nhị: Không hai"
+    },
+    {
+        "question": "大",
+        "answer": "đại",
+        "explanation": "大 đại: to, lớn (TT, 3 nét, bộ đại 大)"
+    },
+    {
+        "question": "八大人覺",
+        "answer": "Bát đại nhân giác",
+        "explanation": "八大人覺 Bát đại nhân giác"
+    },
+    {
+        "question": "夫",
+        "answer": "phu",
+        "explanation": "夫 phu: người đàn ông (DT, 4 nét, bộ đại 大)"
+    },
+    {
+        "question": "友",
+        "answer": "hữu",
+        "explanation": "友 hữu: bạn (DT, 4 nét, bộ hựu 又)"
+    },
+    {
+        "question": "大僧",
+        "answer": "đại tăng",
+        "explanation": "大僧 đại tăng"
+    },
+    {
+        "question": "大學",
+        "answer": "đại học",
+        "explanation": "大學 đại học"
+    },
+    {
+        "question": "大家",
+        "answer": "đại gia",
+        "explanation": "大家 đại gia"
+    },
+    {
+        "question": "四大",
+        "answer": "tứ đại",
+        "explanation": "四大 tứ đại"
+    },
+    {
+        "question": "士夫",
+        "answer": "sĩ phu",
+        "explanation": "士夫 sĩ phu"
+    },
+    {
+        "question": "夫人",
+        "answer": "phu nhân",
+        "explanation": "夫人 phu nhân"
+    }
+]

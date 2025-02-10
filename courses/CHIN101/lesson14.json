@@ -1,0 +1,132 @@
+[
+    {
+        "question": "二",
+        "answer": "nhị",
+        "explanation": "二 nhị: hai, số đếm (ST, 2 nét, bộ nhị 二)"
+    },
+    {
+        "question": "三",
+        "answer": "tam",
+        "explanation": "三 tam: ba, số đếm (ST, 3 nét, bộ nhất 一)"
+    },
+    {
+        "question": "六",
+        "answer": "lục",
+        "explanation": "六 lục: sáu, số đếm (ST, 4 nét, bộ bát 八)"
+    },
+    {
+        "question": "旦",
+        "answer": "đán",
+        "explanation": "旦 đán: Sớm, buổi sáng (DT, 5 nét, bộ 日 nhật)"
+    },
+    {
+        "question": "青",
+        "answer": "thanh",
+        "explanation": "青 thanh: xanh (TT, 8 nét, bộ thanh 青)"
+    },
+    {
+        "question": "立",
+        "answer": "lập",
+        "explanation": "立 lập: đứng (Đgt, 5 nét, bộ lập 立)"
+    },
+    {
+        "question": "立法",
+        "answer": "lập pháp",
+        "explanation": "立法 lập pháp: lập pháp"
+    },
+    {
+        "question": "立地",
+        "answer": "lập địa",
+        "explanation": "立地 lập địa: đạp đất, lập tức; ngay"
+    },
+    {
+        "question": "言",
+        "answer": "ngôn",
+        "explanation": "言 ngôn: nói, lời nói (Đgt/DT, 7 nét, bộ ngôn 言)"
+    },
+    {
+        "question": "立言",
+        "answer": "lập ngôn",
+        "explanation": "立言 lập ngôn: Làm ra lời nói mà để lại cho đời, chỉ việc sáng tác thơ văn sách vở có ích cho đời."
+    },
+    {
+        "question": "念",
+        "answer": "niệm",
+        "explanation": "念 niệm: Nghĩ, nhớ, mong (Đgt, 8 nét, bộ tâm 心 )"
+    },
+    {
+        "question": "念佛法門",
+        "answer": "Niệm Phật pháp môn",
+        "explanation": "念佛法門 Niệm Phật pháp môn"
+    },
+    {
+        "question": "一心念佛",
+        "answer": "nhất tâm niệm Phật",
+        "explanation": "一心念佛 nhất tâm niệm Phật"
+    },
+    {
+        "question": "六入",
+        "answer": "lục nhập",
+        "explanation": "六入 lục nhập"
+    },
+    {
+        "question": "六方",
+        "answer": "lục phương",
+        "explanation": "六方 lục phương"
+    },
+    {
+        "question": "六法",
+        "answer": "lục pháp",
+        "explanation": "六法 lục pháp"
+    },
+    {
+        "question": "六道",
+        "answer": "lục đạo",
+        "explanation": "六道 lục đạo"
+    },
+    {
+        "question": "念佛",
+        "answer": "niệm Phật",
+        "explanation": "念佛 niệm Phật"
+    },
+    {
+        "question": "念法",
+        "answer": "niệm pháp",
+        "explanation": "念法 niệm pháp"
+    },
+    {
+        "question": "念僧",
+        "answer": "niệm tăng",
+        "explanation": "念僧 niệm tăng"
+    },
+    {
+        "question": "立地",
+        "answer": "lập địa",
+        "explanation": "立地 lập địa"
+    },
+    {
+        "question": "立法",
+        "answer": "lập pháp",
+        "explanation": "立法 lập pháp"
+    },
+    {
+        "question": "立言",
+        "answer": "lập ngôn",
+        "explanation": "立言 lập ngôn"
+    },
+    {
+        "question": "立心",
+        "answer": "lập tâm",
+        "explanation": "立心 lập tâm"
+    },
+    {
+        "question": "中立",
+        "answer": "trung lập",
+        "explanation": "中立 trung lập"
+    },
+    {
+        "question": "自立",
+        "answer": "tự lập",
+        "explanation": "自立 tự lập"
+    }
+]

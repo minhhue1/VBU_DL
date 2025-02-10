@@ -1,0 +1,187 @@
+[
+    {
+        "question": "佛",
+        "answer": "Phật",
+        "explanation": "佛 Phật: Đức Phật (DT, 7 nét, bộ 人 nhân)"
+    },
+    {
+        "question": "佛心",
+        "answer": "Phật tâm",
+        "explanation": "佛心 Phật tâm: Tâm giác ngộ của Phật，Tâm của Phật"
+    },
+    {
+        "question": "佛土",
+        "answer": "Phật thổ",
+        "explanation": "佛土 Phật thổ: Đất Phật. Chỉ nơi Phật ở"
+    },
+    {
+        "question": "佛子",
+        "answer": "Phật tử",
+        "explanation": "佛子 Phật tử: Phật tử, con Phật"
+    },
+    {
+        "question": "法",
+        "answer": "pháp",
+        "explanation": "法 pháp: phép tắc,  giáo pháp (DT, 8 nét, bộ 水 thủy)"
+    },
+    {
+        "question": "佛法",
+        "answer": "Phật pháp",
+        "explanation": "佛法 Phật pháp: Phật pháp; giáo lý Phật giáo"
+    },
+    {
+        "question": "法王",
+        "answer": "pháp vương",
+        "explanation": "法王 pháp vương: Phật là bậc Pháp Vương"
+    },
+    {
+        "question": "王法",
+        "answer": "vương pháp",
+        "explanation": "王法 vương pháp: vương pháp; phép vua"
+    },
+    {
+        "question": "法門",
+        "answer": "pháp môn",
+        "explanation": "法門 pháp môn: cửa Phật; Phật môn"
+    },
+    {
+        "question": "六法",
+        "answer": "lục pháp",
+        "explanation": "六法 lục pháp: Sáu pháp"
+    },
+    {
+        "question": "不二法門",
+        "answer": "bất nhị pháp môn",
+        "explanation": "不二法門 bất nhị pháp môn"
+    },
+    {
+        "question": "僧",
+        "answer": "tăng",
+        "explanation": "僧 tăng: tăng sĩ (DT, 14 nét, bộ 人 nhân)"
+    },
+    {
+        "question": "僧士",
+        "answer": "Tăng sĩ",
+        "explanation": "僧士 Tăng sĩ: Tăng sĩ"
+    },
+    {
+        "question": "大僧",
+        "answer": "đại Tăng",
+        "explanation": "大僧 đại Tăng: đại Tăng"
+    },
+    {
+        "question": "僧人",
+        "answer": "Tăng nhân",
+        "explanation": "僧人 Tăng nhân: Tăng nhân"
+    },
+    {
+        "question": "僧众/眾",
+        "answer": "Tăng chúng",
+        "explanation": "僧众/眾 Tăng chúng: Tăng chúng"
+    },
+    {
+        "question": "佛道",
+        "answer": "Phật đạo",
+        "explanation": "佛道 Phật đạo"
+    },
+    {
+        "question": "佛日",
+        "answer": "Phật nhật",
+        "explanation": "佛日 Phật nhật"
+    },
+    {
+        "question": "法力",
+        "answer": "Pháp lực",
+        "explanation": "法力 Pháp lực"
+    },
+    {
+        "question": "僧眾",
+        "answer": "Tăng chúng",
+        "explanation": "僧眾 Tăng chúng"
+    },
+    {
+        "question": "高僧",
+        "answer": "Cao tăng",
+        "explanation": "高僧 Cao tăng"
+    },
+    {
+        "question": "佛法僧",
+        "answer": "Phật Pháp Tăng",
+        "explanation": "佛法僧 Phật Pháp Tăng"
+    },
+    {
+        "question": "一僧一寺",
+        "answer": "nhất tăng nhất tự",
+        "explanation": "一僧一寺 nhất tăng nhất tự"
+    },
+    {
+        "question": "明",
+        "answer": "minh",
+        "explanation": "明 minh: sáng (TT, 8 nét, bộ nhật 日)"
+    },
+    {
+        "question": "明月",
+        "answer": "minh nguyệt",
+        "explanation": "明月 minh nguyệt: Trăng sáng"
+    },
+    {
+        "question": "明目",
+        "answer": "minh mục",
+        "explanation": "明目 minh mục: mắt sáng"
+    },
+    {
+        "question": "明心",
+        "answer": "minh tâm",
+        "explanation": "明心 minh tâm: Tâm sáng"
+    },
+    {
+        "question": "行",
+        "answer": "hành",
+        "explanation": "行 hành: đi (Đgt, 6 nét, bộ hành 行)"
+    },
+    {
+        "question": "行医/醫",
+        "answer": "hành y",
+        "explanation": "行医/醫 hành y: làm nghề y; làm nghề chữa bệnh; bốc thuốc; hốt thuốc"
+    },
+    {
+        "question": "行道",
+        "answer": "hành đạo",
+        "explanation": "行道 hành đạo"
+    },
+    {
+        "question": "同行",
+        "answer": "đồng hành",
+        "explanation": "同行 đồng hành"
+    },
+    {
+        "question": "進行",
+        "answer": "tiến hành",
+        "explanation": "進行 tiến hành"
+    },
+    {
+        "question": "學行",
+        "answer": "học hành",
+        "explanation": "學行 học hành"
+    },
+    {
+        "question": "三人行, 必有我師焉",
+        "answer": "Tam nhân hành, tất hữu ngã sư yên",
+        "explanation": "三人行, 必有我師焉 Tam nhân hành, tất hữu ngã sư yên: Ba người (cùng) đi, tất có người làm thầy ta."
+    },
+    {
+        "question": "仁",
+        "answer": "仁nhân",
+        "explanation": "仁 仁nhân: nhân từ, (DT, 4 nét, bộ 人 nhân)"
+    },
+    {
+        "question": "仁王",
+        "answer": "Nhân vương",
+        "explanation": "仁王 Nhân vương: Tiếng tôn xưng Phật Thích Ca."
+    },
+    {
+        "question": "不仁",
+        "answer": "bất nhân",
+        "explanation": "不仁 bất nhân: Không có lòng thương người."
+    }
+]
