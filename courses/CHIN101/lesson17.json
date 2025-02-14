@@ -1,0 +1,137 @@
+[
+    {
+        "question": "周",
+        "answer": "châu/chu",
+        "explanation": "周 châu/chu: vòng; quanh (DT, 8 nét, bộ 口 khẩu)"
+    },
+    {
+        "question": "周全",
+        "answer": "chu toàn",
+        "explanation": "周全 chu toàn: chu đáo; toàn diện; chu toàn"
+    },
+    {
+        "question": "上周",
+        "answer": "thượng chu",
+        "explanation": "上周 thượng chu: tuần trước; tuần rồi"
+    },
+    {
+        "question": "下周",
+        "answer": "hạ chu",
+        "explanation": "下周 hạ chu: tuần sau; tuần tới"
+    },
+    {
+        "question": "风/風",
+        "answer": "phong",
+        "explanation": "风/風 phong: gió (DT, 4/9 nét, bộ phong 风)"
+    },
+    {
+        "question": "八风/風",
+        "answer": "bát phong",
+        "explanation": "八风/風 bát phong: tám ngọn gió làm ngăn trở sự phát triển của hành giả trên bước đường giác ngộ và giải thoát: 1-Lợi (lợi lộc), 2-Suy (hao tổn), 3-Hủy (chê bai chỉ trích), 4-Dự (gián tiếp khen ngợi người), 5-Xưng (trực tiếp ca tụng người), 6-Cơ (dựng sự việc giả để nói xấu người), 7-Khổ (gặp chướng duyên nghịch cảnh, thân tâm bị bức bách, khổ não), 8-Lạc (gặp được duyên tốt, thuận cảnh, thân tâm vui vẻ, hân hoan).\n八风就是利、衰、毀、譽、稱、譏、苦、樂 。"
+    },
+    {
+        "question": "风/風水",
+        "answer": "phong thuỷ",
+        "explanation": "风/風水 phong thuỷ: phong thuỷ, gió và nước"
+    },
+    {
+        "question": "問",
+        "answer": "vấn",
+        "explanation": "問 vấn: Hỏi (Đgt, 11 nét, 口 khẩu)"
+    },
+    {
+        "question": "同",
+        "answer": "đồng",
+        "explanation": "同 đồng: cùng 1 loại, giống nhau (TT, 6 nét, 口 khẩu)"
+    },
+    {
+        "question": "同心",
+        "answer": "đồng tâm",
+        "explanation": "同心 đồng tâm: Cùng một lòng"
+    },
+    {
+        "question": "共同",
+        "answer": "cộng đồng",
+        "explanation": "共同 cộng đồng: cộng đồng, cùng chung"
+    },
+    {
+        "question": "同行",
+        "answer": "đồng hành",
+        "explanation": "同行 đồng hành: Cùng đi chung, cùng nhau thực tập hay cùng nhau tu hành"
+    },
+    {
+        "question": "同門",
+        "answer": "đồng môn",
+        "explanation": "同門 đồng môn: Cùng học một thầy"
+    },
+    {
+        "question": "月",
+        "answer": "nguyệt",
+        "explanation": "月 nguyệt: mặt trăng (DT, 4 nét, bộ nguyệt 月)"
+    },
+    {
+        "question": "明月",
+        "answer": "minh nguyệt",
+        "explanation": "明月 minh nguyệt: Trăng sáng"
+    },
+    {
+        "question": "用",
+        "answer": "dụng",
+        "explanation": "用 dụng: dùng (Đgt, 5 nét, bộ 用 dụng)"
+    },
+    {
+        "question": "家用",
+        "answer": "gia dụng",
+        "explanation": "家用 gia dụng: gia dụng; đồ dùng gia đình, dùng trong nhà"
+    },
+    {
+        "question": "用力",
+        "answer": "dụng lực",
+        "explanation": "用力 dụng lực: cố sức; gắng sức; dùng sức"
+    },
+    {
+        "question": "用人",
+        "answer": "dụng nhân",
+        "explanation": "用人 dụng nhân: dùng người"
+    },
+    {
+        "question": "用心",
+        "answer": "dụng tâm",
+        "explanation": "用心 dụng tâm: chăm chỉ; để tâm;  ý định; mưu đồ; dụng tâm"
+    },
+    {
+        "question": "閒",
+        "answer": "nhàn",
+        "explanation": "閒 nhàn: thong thả (TT, 12 nét, bộ môn 門)"
+    },
+    {
+        "question": "閒心",
+        "answer": "nhàn tâm",
+        "explanation": "閒心 nhàn tâm: lòng thanh thản; lòng dạ thảnh thơi"
+    },
+    {
+        "question": "周全",
+        "answer": "chu toàn",
+        "explanation": "周全 chu toàn: chu toàn"
+    },
+    {
+        "question": "上周",
+        "answer": "thượng chu",
+        "explanation": "上周 thượng chu: thượng chu"
+    },
+    {
+        "question": "下周",
+        "answer": "hạ chu",
+        "explanation": "下周 hạ chu: hạ chu"
+    },
+    {
+        "question": "八风/風",
+        "answer": "bát phong",
+        "explanation": "八风/風 bát phong: bát phong"
+    },
+    {
+        "question": "用力",
+        "answer": "dụng lực",
+        "explanation": "用力 dụng lực: dụng lực"
+    }
+]
