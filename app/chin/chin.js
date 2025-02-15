@@ -56,7 +56,7 @@ async function loadQuestions() {
         let index = `${currentCourse}`;
         index = index.toLowerCase();
         if (index === 'chin101'){
-            NUM_LESSONS = 15; // Gán số bài học cần tải
+            NUM_LESSONS = 22; // Gán số bài học cần tải
         }
         await loadQuestionAll(currentCourse);
     } else {
