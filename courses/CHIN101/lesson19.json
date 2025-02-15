@@ -1,0 +1,52 @@
+[
+    {
+        "question": "全",
+        "answer": "toàn",
+        "explanation": "全 toàn: đầy đủ, toàn vẹn (TT, 6 nét, bộ 入 nhập)"
+    },
+    {
+        "question": "不全",
+        "answer": "bất toàn",
+        "explanation": "不全 bất toàn: Không trọn vẹn"
+    },
+    {
+        "question": "全家",
+        "answer": "toàn gia",
+        "explanation": "全家 toàn gia: Cả nhà, toàn thể gia đình"
+    },
+    {
+        "question": "十全",
+        "answer": "thập toàn",
+        "explanation": "十全 thập toàn: thập toàn; vẹn toàn; trọn vẹn; hoàn hảo"
+    },
+    {
+        "question": "工",
+        "answer": "công",
+        "explanation": "工 công: người thợ (DT, 3 nét, bộ công 工)"
+    },
+    {
+        "question": "人工",
+        "answer": "nhân công",
+        "explanation": "人工 nhân công: nhân tạo, nhân lực; nhân công; sức người"
+    },
+    {
+        "question": "王",
+        "answer": "vương",
+        "explanation": "王 vương: vua, chúa (DT, 4 nét, bộ 玉Ngọc)"
+    },
+    {
+        "question": "土",
+        "answer": "thổ",
+        "explanation": "土 thổ: Đất (DT, 3 nét, Bộ 土 thổ )"
+    },
+    {
+        "question": "士",
+        "answer": "sĩ",
+        "explanation": "士 sĩ: Học trò (DT, 3 nét, Bộ sĩ士)"
+    },
+    {
+        "question": "壬",
+        "answer": "nhâm",
+        "explanation": "壬 nhâm: can Nhâm (DT, 4 nét, bộ sĩ 士)"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "question": "田",
+        "answer": "điền",
+        "explanation": "田 điền: ruộng đất (DT, 5 nét, bộ 田 điền)"
+    },
+    {
+        "question": "日",
+        "answer": "nhật",
+        "explanation": "日 nhật: mặt trời (DT, 4 nét, bộ nhật 日)"
+    },
+    {
+        "question": "佛日",
+        "answer": "Phật nhật",
+        "explanation": "佛日 Phật nhật: Đức Phật hay giáo pháp của Ngài như ánh sáng mặt trời xua tan bóng tối vô minh"
+    },
+    {
+        "question": "九日 - 午日",
+        "answer": "cửu nhật  - ngọ nhật",
+        "explanation": "九日 - 午日 cửu nhật  - ngọ nhật: Tiết trùng cửu, mùng 9 tháng 9 âm lịch/ 9 mặt trời.\nNgày 5 tháng 5 âm lịch, Mặt trời giữa trưa"
+    },
+    {
+        "question": "曰",
+        "answer": "viết",
+        "explanation": "曰 viết: nói rằng (Đgt, 4 nét, bộ viết 曰)"
+    },
+    {
+        "question": "目",
+        "answer": "mục",
+        "explanation": "目 mục: con mắt (DT, 5 nét, bộ mục 目)"
+    },
+    {
+        "question": "明目",
+        "answer": "minh mục",
+        "explanation": "明目 minh mục: mắt sáng"
+    },
+    {
+        "question": "因",
+        "answer": "nhân",
+        "explanation": "因 nhân: nguyên do, (DT, 6 nét, bộ vi 囗)"
+    },
+    {
+        "question": "因明",
+        "answer": "nhân minh",
+        "explanation": "因明 nhân minh: nhân minh"
+    },
+    {
+        "question": "四",
+        "answer": "tứ",
+        "explanation": "四 tứ: bốn, số đếm (ST, 5 nét, bộ vi 囗)"
+    },
+    {
+        "question": "四大",
+        "answer": "tứ đại",
+        "explanation": "四大 tứ đại: bốn đại: đất, nước, lửa, gió\nĐịa thủy hỏa phong地水火風"
+    }
+]

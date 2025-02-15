@@ -1,0 +1,102 @@
+[
+    {
+        "question": "道",
+        "answer": "đạo",
+        "explanation": "道 đạo: Đường, đạo lý (DT, 13 nét, bộ sước 辵, 辶)"
+    },
+    {
+        "question": "佛道",
+        "answer": "Phật đạo",
+        "explanation": "佛道 Phật đạo: Phật đạo, con đường dẫn tới giác ngộ hay Phật quả"
+    },
+    {
+        "question": "人道",
+        "answer": "nhân đạo",
+        "explanation": "人道 nhân đạo: Lòng nhân đạo; đạo làm người"
+    },
+    {
+        "question": "入道",
+        "answer": "nhập đạo",
+        "explanation": "入道 nhập đạo: Thấu hiểu chân lí. Theo một tôn giáo."
+    },
+    {
+        "question": "六道",
+        "answer": "lục đạo",
+        "explanation": "六道 lục đạo: Sáu đường luân hồi của chúng sanh gồm Thiên đạo, Nhân đạo, A-tu-la đạo, Ngạ quỷ đạo, Súc sinh đạo, và Địa ngục đạo"
+    },
+    {
+        "question": "道士",
+        "answer": "đạo sĩ",
+        "explanation": "道士 đạo sĩ: đạo sĩ"
+    },
+    {
+        "question": "天道",
+        "answer": "thiên đạo",
+        "explanation": "天道 thiên đạo: Cõi trời"
+    },
+    {
+        "question": "行道",
+        "answer": "hành đạo",
+        "explanation": "行道 hành đạo: ngành nghề, hành đạo"
+    },
+    {
+        "question": "达道",
+        "answer": "đạt đạo",
+        "explanation": "达道 đạt đạo: đạt đạo"
+    },
+    {
+        "question": "問道",
+        "answer": "vấn đạo",
+        "explanation": "問道 vấn đạo: hỏi đạo"
+    },
+    {
+        "question": "边/邊",
+        "answer": "biên",
+        "explanation": "边/邊 biên: bên cạnh (DT, 5/19 nét, bộ sước 辵, 辶)"
+    },
+    {
+        "question": "达/達",
+        "answer": "đạt",
+        "explanation": "达/達 đạt: được; đạt đến (ĐgT, 6/13 nét, bộ sước 辵, 辶)"
+    },
+    {
+        "question": "进/進",
+        "answer": "tiến",
+        "explanation": "进/進 tiến: tiến  (ĐgT, 7/12 nét, bộ sước 辵, 辶)"
+    },
+    {
+        "question": "远/遠",
+        "answer": "viễn",
+        "explanation": "远/遠 viễn: xa; (TT, 7/14 nét, bộ sước 辵, 辶)"
+    },
+    {
+        "question": "返",
+        "answer": "phản",
+        "explanation": "返 phản: Trở lại (ĐgT, 7 nét, bộ sước 辵, 辶)"
+    },
+    {
+        "question": "近",
+        "answer": "cận",
+        "explanation": "近 cận: gần (TT, 7 nét, bộ xước 辵, 辶)"
+    },
+    {
+        "question": "建",
+        "answer": "kiến",
+        "explanation": "建 kiến: dựng lên, thành lập (ĐgT, 9 nét, bộ 廴 dẫn)"
+    },
+    {
+        "question": "返工",
+        "answer": "phản công",
+        "explanation": "返工 phản công: làm lại"
+    },
+    {
+        "question": "建立",
+        "answer": "kiến lập",
+        "explanation": "建立 kiến lập: xây dựng; kiến trúc; lập nên"
+    },
+    {
+        "question": "進行",
+        "answer": "tiến hành",
+        "explanation": "進行 tiến hành: tiến hành; làm"
+    }
+]
